@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <link rel="stylesheet" type="text/css" href="css/mui.min.css"/>
+    <style type="text/css">
+    	a{text-decoration: none;}
+    	
+    	.head{
+    		line-height: 2;height:6.3%;width: 100%;
+    		border-bottom: 1px solid #D8D8D8;border-top: 1px solid #d8d8d8;
+    	}
+    	.head span{width:78%;margin: 1.5% 0;display: inline-block;}
+    	.head>a:nth-of-type(1){color:black ;margin: 2% 0;}
+   		@media screen and (min-width: 100px) and (max-width: 1920px) {
+    		
+    		.pic{max-width: 100%;height: auto;}
+    		}	
+    	section{margin: 0 auto;}
+		section:nth-of-type(1){height: 8.4%;width: auto;line-height: 2;margin-top: 2.2%;font-size: 15px;}  
+		 section:nth-of-type(1) img{margin-left: 5.9%;}
+		section:nth-of-type(1) span{vertical-align: top;margin-left: 1.2%;width: 65%;display: inline-block;}
+		section:nth-of-type(2){width: 84.5%;height: 6.3%;;line-height: 1;margin-top: 0.9%;margin-bottom: 3.9%;} 
+		section:nth-of-type(2) p{color: #000000;}
+		section:nth-of-type(3){width: 84.5%;height: 6%;line-height: 1;margin-top: 0.9%;margin-bottom: 3.9%;
+								background: #FCFCFC;border: 0.5px solid #D8D8D8;border-radius: 3px;line-height: 1;
+		}  
+		section:nth-of-type(3) p{font-size: 15px;}
+    	@media screen and (min-width: 751px) and (max-width: 1366px) {
+    		section:nth-of-type(1){font-size: 2em;}
+    		section:nth-of-type(2) p{font-size: 2em;}
+    		section:nth-of-type(3) p{font-size: 2em;}
+    	}	
+    </style>
+</head>
+<body>
+	<img class="pic" src="preview/symbols-status-bar-black-100.png"/>
+	<div class="head">
+		<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+		<span>评论</span>
+  		<!--<a href="#">发布</a>-->
+	</div>
+   <!--主体屏幕内容-->
+   <section>
+   	<img src="assets/head_comment.png"/><span>用户名</span><button type="button" class="mui-btn mui-btn-outlined">回复</button>
+   </section>
+   <section>
+   	
+      <p>您在文章<a href="#">《读不读大学是差别造就了差距》 </a>中收到了一条新评论</p>
+   </section>
+   <section>
+   	<p><a href="#">@唐一弦 </a> <span>确实</span></p>
+   </section>
+   	<nav class="mui-bar mui-bar-tab">
+   	    <a class="mui-tab-item mui-active">
+   	        <span class="mui-icon mui-icon-home"></span>
+   	        <span class="mui-tab-label">首页</span>
+   	    </a>
+   	    <a class="mui-tab-item">
+   	        <span class="mui-icon mui-icon-phone"></span>
+   	        <span class="mui-tab-label">电话</span>
+   	    </a>
+   	    <a class="mui-tab-item">
+   	        <span class="mui-icon mui-icon-email"></span>
+   	        <span class="mui-tab-label">邮件</span>
+   	    </a>
+   	    <a class="mui-tab-item">
+   	        <span class="mui-icon mui-icon-gear"></span>
+   	        <span class="mui-tab-label">设置</span>
+   	    </a>
+   	</nav>
+    <script src="js/mui.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/jquery-3.2.1.min.js" type="text/javascript" charset="utf-8"></script>
+    <script type="text/javascript">
+    mui.init();
+  		var height = outerHeight;
+		console.log($("body").height())
+		$("body").css("height", height)
+    </script>
+</body>
+</html>

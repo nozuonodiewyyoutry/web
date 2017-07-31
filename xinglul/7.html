@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,height=device-height,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title></title>
+		<link href="css/mui.min.css" rel="stylesheet" />
+		<style type="text/css">
+			* {
+				margin: 0;
+				padding: 0;
+			}
+			a{text-decoration: none;}
+			a,span{display: inline-block;}
+			body{background-color: #333333;max-width: 1024px;overflow: hidden;}
+			.s1{height: 3%;}
+			.s2{height: 6.3%;}
+			.s2 a{height: 100%;width: 10%;text-align: center;}
+			.s3{height: 90.7%;width: 100%;font-size: 30px;}
+    		.s3 p{max-width: 1024px;text-align: center;margin-top: 12.6%;color: #dbdbdb;font-family: TamilMN;letter-spacing: 0.23px;}
+    		.s3 p:nth-of-type(1){font-size: 24px;margin-top: 2.1%;color: #e1e1e1;}
+    		.s3 p:nth-of-type(2){font-size: 12px;margin-top: 9.9%;color: #e1e1e1;}	
+    		
+			@media screen and (min-width: 100px) and (max-width: 1920px) {
+    		
+    		.pic{max-width: 100%;height: auto;}
+    		}
+    		@media screen and (max-width: 375px){
+    			.s3 p{font-size: 1em;}
+	    	}
+	    	@media screen and (min-width: 375px) and (max-width: 750px) {
+	    		.s3 p{font-size: 1.5em;}
+	    		.s3 p:nth-of-type(1){font-size: 36px}
+	    		.s3 p:nth-of-type(2){font-size: 18px}
+	    		.pic2{width: 2em;height: auto;}
+	    	}
+	    	@media screen and (min-width: 751px) and (max-width: 1366px) {
+	    		.s3 p{font-size: 2em;}
+	    		.s3  p:nth-of-type(1) {font-size: 48px}
+	    		.s3 p:nth-of-type(2){font-size: 24px;}
+	    		.pic3{width: 3em;height: auto;}
+	    		.pic2{width: 3em;height: auto;}
+	    	}	
+	    	.mask{cursor: pointer;width: 100%;height: 100%;background-color: rgba(0,0,0,.6);position: absolute;top: 0;left: 0;}
+	    	.posi{position: absolute;top: 0;left: 0;width: 100%;height: 100%;background-color: #929292;color:#333333;}
+	    	.logincontent{text-align: left;}
+			.logincontent ul{
+				list-style-type: none;
+			}
+			.logincontent ul>li:nth-of-type(1){
+				font-size: 2em;margin: 4% 0;
+			}
+			.logincontent ul>li:nth-of-type(5){
+				font-size: 1em;margin: 4% 0;
+			}
+			.logincontent ul>li{
+				height: 10%;
+				line-height: 1;
+				width:94％;
+				font-size: 1em;
+				margin-top: 2%;
+			}
+			.logincontent input{
+				width: 40%;
+			}
+			.logincontent span{
+				font-size: 10px;
+				color: blue;
+				line-height:1;
+				width: 98%;
+				height: 5%;
+				text-align: center;
+			}
+			sup{
+				color: red;
+			}
+			.mask1{display: none;}
+			.mask1 li:nth-of-type(5){color: #333333;}
+			/*.mask1 li:nth-of-type(4){height: 5%;width: 16%;background-color: #007AFF;color: white;margin: 0 auto;}*/
+			.mask2{display: none;}
+			.hb input{width: 50%;text-align: center;}
+			.logincontent ul>li:nth-of-type(1) , .but{text-align: center;}
+			.logincontent ul>li:nth-of-type(1) , .logincontent ul>li:nth-of-type(2) , .logincontent ul>li:nth-of-type(3) , .agin
+			{width: 100%;background-color: white;margin: 5% 0;box-shadow: 1px 1px 1px 1px rgba(0,0,0,.2)}
+			.zhuce{width: 100%;text-align: center;}
+			.but button{margin: 0 15%;box-shadow: 1px 1px 1px 1px rgba(0,0,0,.6);}
+		</style>
+	</head>
+
+	<body>
+		<div class="s1">
+		<img class="pic" src="preview/symbols-status-bar-white-100.png"/>
+		</div>
+		<div class="s2">
+			<a href="#"><img class="pic3" src="assets/icon_me_back.png"/></a>
+		</div>
+		<div class="s3">
+			
+			<p><img class="pic2" src="assets/head_personal datahead.png"/></p>
+			<p>登录</p>
+			<p>收&nbsp;&nbsp;藏</p>
+			<p>离 &nbsp;&nbsp;线</p>
+			<p>笔 &nbsp;&nbsp;记</p>
+			
+		</div>
+		<div class="mask1">
+			<!--登录-->
+		<form class="mui-input-group posi">
+		    <div class="logincontent">
+		       <ul>
+					<li>登录</li>
+					<li>账号登录名：<input type="text" name="" id="yesname" value="" placeholder="" /><br/><span class="txt">提示：请输入手机号</span></li>
+					<li>登录密码：<input type="password" name="" id="yespass" value="" /><span class="txt1">提示：请输入登密码</span></li>
+					<li class="but"><button class="yes">确认</button><button class="canclelogin">取消</button></li>
+					<li class="zhuce">如未注册，请先点击此处注册</li>
+		       </ul>
+		    </div>
+		</form>
+		</div>
+		
+		<div class="mask2">
+			<!--注册-->
+		<form class="mui-input-group posi">
+		    <div class="logincontent">
+		       <ul>
+					<li>注册</li>
+					<li><sup>*</sup>请创建一个账号登录名：<input type="tel" name="" id="username" value="" /><span class="txt2">提示：请输入手机号码</span></li>
+					<li><sup>*</sup>创建登录密码：<input type="password" name="" id="password" value="" /><span class="txt3">提示：6-16位字符（字母开头、数字），区分大小写</span></li>
+					<li class="agin"><sup>*</sup>重新确认登录密码：<input type="password" name="" id="aginpassword" value="" /><span class="txt4">提示：请重新输入密码</span></li>	
+					<li class="hb">兴趣标签：<br />
+						<input type="checkbox" name="hb" />武侠<input type="checkbox" name="hb" />古典
+						<input type="checkbox" name="hb" />现代<input type="checkbox" name="hb" />科幻
+						<input type="checkbox" name="hb" />侦探<input type="checkbox" name="hb" />纪实
+						<input type="checkbox" name="hb" />外国<input type="checkbox" name="hb" />历史
+						<input type="checkbox" name="hb" />言情<input type="checkbox" name="hb" />军事
+					</li>
+					<li class="but"><button class="post" >提交</button><button class="cancle">取消</button></li>
+					
+				</ul>
+		    </div>
+		</form>
+		
+		</div>
+	</body>
+	<script src="js/jquery-3.2.1.min.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		/*登录页面*/
+		var height = outerHeight;
+		$("body").css("height", height)
+		$(".s3 p").eq(1).click(function() {
+			$(".mask1").css("display","block")	
+		})
+		$(".zhuce").click(function() {
+			$(".mask2").css("display","block");
+		})
+		/*用户名登录验证*/
+		function usertest (ele1,ele2) {
+				ele1.blur(function(e){//blur事件是不能加载是就出现的，要先给光标，再离开，才能触发
+				var k=ele1.val();	
+				var regExp1=/^1[34578]\d{9}/;
+				ele2.css("color","red");
+				if (!(regExp1.test(k))) {ele2.text("输入有误，请输入手机号码。")}else{ele2.text("输入正确");ele2.css("color","green");flag++}
+				if(($(this).val().length)>=17||($(this).val().length)<=5){
+						ele2.text("该手机号码长度不对，应为11位数。")
+				}
+				if ($(this).val().length=='') {ele2.text("不能为空")}
+			})
+		}
+		usertest($("#yesname"),$(".txt"));
+		/*登录密码验证*/
+		function passwordtest (ele1,ele2) {
+					ele1.blur(function(e){//blur事件是不能加载是就出现的，要先给光标，再离开，才能触发	
+					var v=ele1.val();
+					var regExp1=/^\w{6,16}/;
+					ele2.css("color","red");
+					if (!(regExp1.test(v))) {ele2.text("输入有误，请再次输入密码。")}else{ele2.text("输入正确");ele2.css("color","green");flag++}
+					if($(this).val().length!=11){
+							ele2.text("该密码长度不对，应为6-16位数。")
+					}
+					if ($(this).val().length=='') {ele2.text("不能为空")}
+				})
+		}
+		passwordtest($("#yespass"),$(".txt1"))
+		/*提交验证*/
+		$(".yes").click(function () {
+			var yesname=$("#yesname").val();
+			var yespass=$("#yespass").val();
+			for (var i in localStorage) {
+				if (localStorage[i]==yespass && i==yesname) {
+					$(".txt").text("输入正确")
+					alert("请确认登录");
+					break;
+				}else{
+					alert("账号不存在");
+					alert("请先注册");
+					break;
+				}
+			}
+		})
+		$(".canclelogin").click(function(e) {
+			$(".mask1").css("display","none")	
+		})
+		/*注册页面*/
+		var flag=0;
+			/*用户名验证*/
+			usertest($("#username"),$(".txt2"));
+			$(".inpuy").eq(0).focus(function() {//blur事件是不能加载是就出现的，要先给光标，再离开，才能触发
+				$(".txt0").text("设置后不可更改中英文均可，最长7个汉字或14个字符")
+			})
+				/*登录密码验证*/
+				passwordtest($("#password"),$(".txt3"));
+				$(".inpuy").eq(0).focus(function() {//blur事件是不能加载是就出现的，要先给光标，再离开，才能触发
+					$(".txt0").text("设置后不可更改中英文均可，最长7个汉字或14个字符")
+				})
+				/*重输密码验证*/
+				$("#aginpassword").blur(function(e){
+					
+					if ($(this).val()==$("#password").val()) {
+						$(".txt4").text("输入正确");$(".txt4").css("color","green");flag++;
+					} else{
+						$(".txt4").text("输入有误");$(".txt4").css("color","red");
+					}
+					if ($(this).val().length=='') {$(".txt4").text("不能为空");$(".txt4").css("color","red");}
+				})
+		$(".post").click(function(e) {
+			if (flag==3) {
+				var k=$("#username").val();	
+				var v=$("#password").val();
+				/*必须在点击事件里面声明k和v；*/
+			
+					/*遍历数据比对*/
+				for (var i in localStorage) {
+					if (i==k) {
+					
+						alert("账号已存在");
+					}else if (localStorage){
+					
+						localStorage.setItem(k,v);
+					}
+				}
+			} else{
+				return false;
+			}
+		})
+		$(".cancle").click(function(e) {
+			$(".mask2").css("display","none")	
+		})
+	
+	</script>
+
+</html>

@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <link rel="stylesheet" type="text/css" href="css/mui.min.css"/>
+    <style type="text/css">
+    	*{margin: 0;padding: 0;}
+    	body{background-color: #444;}
+    	span{display: inline-block;}
+    	.symbols{height: 20px;width:100%;}
+    	.symbols>ul{list-style-type: none;
+    				width: 100%;height: 20px;
+    				display: flex;justify-content: space-between;
+    				/*flex-start： 弹性盒子元素将向行起始位置对齐。该行的第一个子元素的主起始位置的边界将与该行的主起始位置的边界对齐，同时所有后续的伸缩盒项目与其前一个项目对齐。 
+					flex-end： 弹性盒子元素将向行结束位置对齐。该行的第一个子元素的主结束位置的边界将与该行的主结束位置的边界对齐，同时所有后续的伸缩盒项目与其前一个项目对齐。 
+					center： 弹性盒子元素将向行中间位置对齐。该行的子元素将相互对齐并在行中居中对齐，同时第一个元素与行的主起始位置的边距等同与最后一个元素与行的主结束位置的边距（如果剩余空间是负数，则保持两端相等长度的溢出）。 
+					space-between： 弹性盒子元素会平均地分布在行里。如果最左边的剩余空间是负数，或该行只有一个子元素，则该值等效于'flex-start'。在其它情况下，第一个元素的边界与行的主起始位置的边界对齐，同时最后一个元素的边界与行的主结束位置的边距对齐，而剩余的伸缩盒项目则平均分布，并确保两两之间的空白空间相等。 
+					space-around： 弹性盒子元素会平均地分布在行里，两端保留子元素与子元素之间间距大小的一半。如果最左边的剩余空间是负数，或该行只有一个伸缩盒项目，则该值等效于'center'。在其它情况下，伸缩盒项目则平均分布，并确保两两之间的空白空间相等，同时第一个元素前的空间以及最后一个元素后的空间为其他空白空间的一半。 */
+    	}
+		.symbols>ul>li:nth-child(1){
+				display: flex;justify-content: flex-start;
+				width: auto;height: 100%;
+				line-height: 20px;
+			}
+		.symbols>ul>li:nth-child(1) span:nth-child(1){
+			width: 40px;height: 20px;margin-left: 6.5px;
+			background:url(preview/1.png) no-repeat 0 0px;
+			/*background-color: whitesmoke;*/
+		}
+		.symbols>ul>li:nth-child(1) span:nth-child(2){
+			width: 44px;height: 20px;
+			background:url(preview/1.png) no-repeat -40px 0px;
+			
+		}
+		.symbols>ul>li:nth-child(1) span:nth-child(3){
+			width: 20px;height: 20px;
+			background:url(preview/1.png) no-repeat -84px 0px;
+			
+		}
+		.symbols>ul>li:nth-child(2){
+			
+		width: auto;height: 100%;
+		}
+		.symbols>ul>li:nth-child(2) span{
+			font-size: 12px;color: white;
+		width: 60px;height: 100%;
+		}
+		.symbols>ul>li:nth-child(3){
+			color: white;font-size: 12px;
+		width: auto;height: 100%;
+		}	
+		.symbols>ul>li:nth-child(3) span:nth-child(1){
+			
+		width: 60px;height: 100%;
+		}	
+		.symbols>ul>li:nth-child(3) span:nth-child(2){
+			vertical-align: middle;
+		width: 60px;height: 100%;
+		}	
+		.symbols>ul>li:nth-child(3) span:nth-child(2) input{
+			display: inline-block;
+		width: 30px;height: 10px;
+		}	
+    </style>
+</head>
+<body>
+	<div class="symbols">
+		<ul>
+			<li>
+				<span></span>
+				<span></span>
+				<span></span>
+			</li>
+			<li>
+				<span></span>
+			</li>
+			<li>
+				
+				
+			</li>
+		</ul>
+	</div>
+    <script src="js/mui.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/jquery-3.2.1.min.js" charset="utf-8"></script>
+    <script type="text/javascript">
+    mui.init()
+    /*取时间*/
+    var data=new Date();
+    var h=data.getHours();
+    var m=data.getMinutes();
+    var mu=m<10?("0"+m):m;
+   	var noon=h>=12?"PM":"AM";
+   	console.log(h+":"+mu+" "+noon)
+   	$(".symbols>ul>li:nth-child(2) span").text(h+":"+mu+" "+noon);
+   var sbtimer=setInterval(function  () {
+   		
+   },60000)
+   	/*取电池的状态*/
+   	window.addEventListener("load", function() {   
+      var battery = navigator.battery || navigator.mozBattery;   
+      function displayBatteryStats() {   
+       $(".symbols>ul>li:nth-child(3) span:nth-child(1)").text(battery.level * 100);   
+     }   
+    }, false);   
+    </script>
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <link rel="stylesheet" type="text/css" href="css/mui.min.css"/>
+    <style type="text/css">
+    	a{text-decoration: none;display: inline-block;}
+    	
+    	.head{
+    		text-align: center;line-height: 40px;height: 40px;width: auto;
+    		border-bottom: 1px solid #D8D8D8;border-top: 1px solid #d8d8d8;
+    	}
+    	.head .search{display: inline-block;width:270px;}
+    	.head .search .input{height: 30px;}
+    	.head>a{height: 30px;width: 40px;line-height: 40px;vertical-align: top;color: #929292;}
+    	.head>a:nth-of-type(2){color: #929292;}
+    	p{width: auto;height: auto;margin: 20px auto;}
+    	.keyworld{height:auto;width:auto;overflow: hidden;margin: 0 auto;}
+    	
+    	.keyworld>a{width: 76px;height: 26px;text-align: center;line-height: 30px;background-color:#DDDDDD;color: #2e2e2e;margin-left:30px}
+   		@media screen and (min-width: 100px) and (max-width: 1920px) {
+    		
+    		.pic{max-width: 100%;height: auto;}
+    		}
+    </style>
+</head>
+<body>
+	<img class="pic" src="preview/symbols-status-bar-black-100.png"/>
+	<div class="head">
+		<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+		<div class="mui-input-row mui-search search">
+       		<input type="search" class="mui-input-clear input" placeholder="搜索地区、文章或作者名">
+  		</div>
+  		<a href="#">搜索</a>
+	</div>
+    <p>热门搜索</p>
+   	<div class="keyworld">
+   		<a>普希金</a>
+   		<a>莱蒙托夫</a>
+   	</div>
+   	<nav class="mui-bar mui-bar-tab">
+   	    <a class="mui-tab-item mui-active">
+   	        <span class="mui-icon mui-icon-home"></span>
+   	        <span class="mui-tab-label">首页</span>
+   	    </a>
+   	    <a class="mui-tab-item">
+   	        <span class="mui-icon mui-icon-phone"></span>
+   	        <span class="mui-tab-label">电话</span>
+   	    </a>
+   	    <a class="mui-tab-item" href="setting.html">
+   	        <span class="mui-icon mui-icon-email"></span>
+   	        <span class="mui-tab-label">邮件</span>
+   	    </a>
+   	    <a class="mui-tab-item">
+   	        <span class="mui-icon mui-icon-gear"></span>
+   	        <span class="mui-tab-label">设置</span>
+   	    </a>
+   	</nav>
+    <script src="js/mui.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/jquery-3.2.1.min.js" type="text/javascript" charset="utf-8"></script>
+    <script type="text/javascript">
+    mui.init();
+   
+</body>
+</html>

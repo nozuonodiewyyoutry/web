@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <link rel="stylesheet" type="text/css" href="css/mui.min.css"/>
+    <style type="text/css">
+    	a{text-decoration: none;display: inline-block;}
+   		@media screen and (min-width: 100px) and (max-width: 1920px) {.pic{max-width: 100%;height: auto;}}	
+    	.head{line-height: 2.5;height:6.3%;width: 100%;border-bottom: 1px solid #D8D8D8;border-top: 1px solid #d8d8d8;}
+    	.head span{display: inline-block;vertical-align: middle;width:30%;}
+    	.head>a:nth-of-type(1) {margin: 2% 0;color:#D8D8D8 ;}
+    	.mui-media-body{position: relative;}
+    	.mui-media-body span:nth-of-type(1){color: #191818;}
+    	.mui-media-body span:nth-of-type(2){position: absolute;top: 3.1%;right: 4.5%;color: #a2a2a2;font-size: 11px;}
+    </style>
+</head>
+<body>
+	<img class="pic" src="preview/symbols-status-bar-black-100.png"/>
+	<div class="head">
+		<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+		<span>私信</span>
+		<span>写私信</span>
+  		<!--<a href="#">发布</a>-->
+	</div>
+   <!--主体屏幕内容-->
+  	<ul class="mui-table-view">
+  	    <li class="mui-table-view-cell mui-media">
+  	        <a href="javascript:;">
+  	            <img class="mui-media-object mui-pull-left" src="assets/head_comment.png">
+  	            <div class="mui-media-body">
+  	                <span>幸福</span><span>7小时前</span>
+  	                <p class="mui-ellipsis">能和心爱的人一起睡觉，是件幸福的事情；可是，打呼噜怎么办？</p>
+  	            </div>
+  	        </a>
+  	    </li>
+  	    <li class="mui-table-view-cell mui-media">
+  	        <a href="javascript:;">
+  	            <img class="mui-media-object mui-pull-left" src="assets/head_Private letter_4.png">
+  	            <div class="mui-media-body">
+  	                <span>木屋</span><span>7小时前</span>
+  	                <p class="mui-ellipsis">想要这样一间小木屋，夏天挫冰吃瓜，冬天围炉取暖.</p>
+  	            </div>
+  	        </a>
+  	    </li>
+  	    <li class="mui-table-view-cell mui-media">
+  	        <a href="javascript:;">
+  	            <img class="mui-media-object mui-pull-left" src="assets/head_Submission request.png">
+  	            <div class="mui-media-body">
+  	               <span>CBD</span> <span>7小时前</span>
+  	                <p class="mui-ellipsis">烤炉模式的城，到黄昏，如同打翻的调色盘一般.</p>
+  	            </div>
+  	        </a>
+  	    </li>
+  	</ul>
+   	<nav class="mui-bar mui-bar-tab">
+   	    <a class="mui-tab-item mui-active">
+   	        <span class="mui-icon mui-icon-home"></span>
+   	        <span class="mui-tab-label">首页</span>
+   	    </a>
+   	    <a class="mui-tab-item">
+   	        <span class="mui-icon mui-icon-phone"></span>
+   	        <span class="mui-tab-label">电话</span>
+   	    </a>
+   	    <a class="mui-tab-item">
+   	        <span class="mui-icon mui-icon-email"></span>
+   	        <span class="mui-tab-label">邮件</span>
+   	    </a>
+   	    <a class="mui-tab-item">
+   	        <span class="mui-icon mui-icon-gear"></span>
+   	        <span class="mui-tab-label">设置</span>
+   	    </a>
+   	</nav>
+    <script src="js/mui.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/jquery-3.2.1.min.js" type="text/javascript" charset="utf-8"></script>
+    <script type="text/javascript">
+    mui.init();
+  		var height = outerHeight;
+		console.log($("body").height())
+		$("body").css("height", height)
+    </script>
+</body>
+</html>
