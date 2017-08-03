@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			.demo{height: 500px;width: 500px;background-color: lightgreen;}
+		</style>
+	</head>
+	<body>
+		<div class="demo">
+			
+		</div>
+		<script type="text/javascript">
+			 var object = document.querySelector(".demo");
+			 object.addEventListener("touchstart",function (e) {
+			 	console.log("ontouchstart")
+			 	console.log(e.targetTouches.length)
+			 })
+			 object.addEventListener("touchmove",function (e) {
+			 	console.log("ontouchmove")
+			 	console.log(e.touches.length)
+			 })
+			 object.addEventListener("touchend",function (e) {
+			 	console.log("ontouchend")
+			 	console.log(e.targetTouches.length)
+			 	console.log(e.targetTouches.length)
+			 })
+		</script>
+	</body>
+</html>
