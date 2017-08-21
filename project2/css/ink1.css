@@ -1,0 +1,151 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+.linkone{
+	width: 100%;
+	display: flex;
+	flex-flow: row nowrap;
+	margin-top:60px;
+	margin-left: 5%;
+}
+.linkone .text{
+	width: 70px;
+	position: fixed;
+	z-index: 1000;
+	/*position: relative;*/
+}
+.linkone .text h2{
+	transform: rotate(90deg) translateY(0);
+	font-size: 13px;
+	/*position: absolute;*/
+	display: block;
+	font-weight: bold;
+	margin:20px 0 0 -130px;
+}
+.linkone .draw{
+	width:100%;
+	position:relative;
+	/*margin-left: 50px;*/
+}
+.linkone .draw ul{
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-flow: row wrap;
+}
+.linkone .draw ul li{
+	height: 185px;
+	width: 185px;
+	list-style: none;
+	justify-content:flex-start;
+	margin:0;
+	text-align: center;
+
+}
+.linkone .draw>ul>li:hover{
+	border: 1px solid black;
+}
+.linkone .draw>ul>li:hover p{
+	display: block;
+}
+.linkone .draw>ul>li:hover img{
+	transform: scale(0.9);
+}
+.linkone .draw ul li a{
+	width: 100%;
+	height:100%;
+}
+.linkone .draw ul li a img{
+	width: 70%;
+	height:70%;
+	transition: all 0.3s;
+}
+.linkone .draw>ul>li p{
+	text-align: center;
+	display: none;
+	font-size: 13px;
+}
+/*单图片显示*/
+.linkone .draw .current{
+	width: 100%;
+	height: 950px;
+	position: absolute;
+	left: 0%;
+	top:0;
+	background: white;
+}
+.linkone .draw .current ul{
+	height: 950px;
+	width: 100%;
+}
+.linkone .draw .current ul li{
+	height: 950px;
+	width: 1508px;
+}
+.linkone .draw .current span{
+	display:block;
+	width: 50px;
+	height: 50px;
+	text-align: center;
+	line-height: 50px;
+}
+.linkone .draw .current span img{
+	vertical-align: middle;
+}
+.linkone .draw .current .left{
+	position: absolute;
+	left:-1%;
+	top:50%;
+	transform: translateY(-50%);
+	cursor: pointer;
+}
+.linkone .draw .current .right{
+	right:-8%;
+	position: absolute;
+	top:50%;
+	transform: translateY(-50%);
+	cursor: pointer;
+}
+.linkone .draw .current .close{
+	right: -8%;
+	top:0;
+	position: absolute;
+	cursor: pointer;
+	
+}
+.linkone .draw .current .close img{
+	height:20px;
+	width: 20px;
+}
+.linkone .draw .current div{
+	width: 100%;
+	height: 405px;
+	text-align: center;
+	margin-top:100px;
+}
+.linkone .draw .current p{
+	height: 18px;
+	width: 100%;
+	text-align: center;
+	margin-top: 5%;
+}
+.indexdiv{font-size: 10px;color: #424242;margin-left: 20%;}
+.indexdiv>p:nth-of-type(1){font-size: 18px;margin: 30px 0;}
+.indexdiv>p:nth-of-type(4){margin: 0 0 30px 0;}
+.indexdiv>p:nth-of-type(6){margin: 0 0 30px 0;}
+.indexdiv>p:nth-of-type(10){margin: 0 0 30px 0;}
+.indexdiv>p:nth-of-type(17){margin: 0 0 30px 0;}
+.indexdiv>p:nth-of-type(20){margin: 0 0 30px 0;}
+.indexdiv>p:nth-of-type(22){margin: 0 0 30px 0;}
+.indexdiv>p:nth-of-type(25){margin: 0 0 30px 0;}
+.indexdiv>p:nth-of-type(26){margin: 30 0 30px 0;}
+.indexdiv>p:nth-of-type(30){margin: 0 0 30px 0;}
+.indexdiv>p:nth-of-type(33){margin: 0 0 30px 0;}
+.indexdiv>p:nth-of-type(37){margin: 0 0 30px 0;}
+.indexdiv>p:nth-of-type(41){margin: 0 0 30px 0;}
+.indexdiv>p:nth-of-type(44){margin: 0 0 30px 0;}
+.indexdiv>p:nth-of-type(46){margin: 0 0 30px 0;}
+.indexdiv>p:nth-of-type(50){margin: 0 0 50px 0;}
+.indexdiv>p:nth-of-type(26){font-size: 18px;margin: 30px 0;}
+.indexp{text-align: left;}

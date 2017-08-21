@@ -1,0 +1,18 @@
+<div ng-app="ink1Module"  ng-controller="ink1ctrl" class="linkone">
+		<div class="text">
+			<h2>{{numb}}</h2>
+		</div>
+		<div class="draw">
+			<ul>
+				<li ng-repeat="pic in picss" ng-click="show($scope)"><a><img ng-src="{{pic.src}}"/></a><p>{{pic.tex}}</p></li>
+			</ul>
+			<div class="current" ng-show="current">
+			<ul>
+				<li><div><img ng-src="{{n}}" /></div><p>{{te}}</p></li>
+			</ul>
+			<span class="left" ng-click="leftgo()"><img src="image/left.gif"></span>
+			<span class="right" ng-click="rightgo()"><img src="image/right.gif"></span>
+			<span class="close" ng-click="hide()"><img src="image/close.gif"></span>
+		    </div>
+		</div>
+</div>

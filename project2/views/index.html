@@ -1,0 +1,9 @@
+<div ng-app="homeModule"  ng-controller="homectrl" class="linkone">
+		<div class="text">
+			<h2>{{numb}}</h2>
+		</div>
+		<div class="indexdiv draw">		
+		    	<p ng-repeat="t in tt track by $index" class="indexp">{{t}}</p>
+		    	<!--只写t in tt 不行，还要写track by $index(根据索引号来)-->		   
+		</div>
+</div>

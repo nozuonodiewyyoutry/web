@@ -1,0 +1,17 @@
+<div ng-app="newsModule"  ng-controller="n2ctrl"  class="jbook">			
+			<div class="content">
+				<section ng-repeat="data in datas">
+					<!--<header>-->
+						<p>{{data.dat|date:"yyyy-MM-dd"}}</p>
+						<h3>{{data.tex1}}</h3>
+					<!--</header>-->
+					<div class="j-body"><img  src="image/{{data.pic}}"</div>
+					<footer>
+						<p class="text1">{{data.tex2}}</p>
+						<p class="text2">{{data.tex3}}</p>
+						<p class="text3">{{data.tex4}}</p>
+						<p class="text4">{{data.tex5}}</p>
+					</footer>
+				</section>
+			</div>
+</div>

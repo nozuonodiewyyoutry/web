@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html ng-app="app">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="stylesheet" type="text/css" href="index.css"/>
+		<link rel="stylesheet" type="text/css" href="css/news.css"/>
+		<link rel="stylesheet" type="text/css" href="css/jbook.css"/>
+		<title>该网页有2个a标签，点击能在下面显示不同的内容，而这些内容是通过路由技术连接到不同的子文件实现的；
+			必须在服务器中打开本网页，在hbuilder中已经自带服务器，所以能正常运转</title>
+		<script src="js/angular.min.js"></script>
+		<script src="js/angular-ui-router.js"></script>
+		<script src="module/home.js"></script>
+		<script src="module/news.js"></script>
+		<script src="directive/d.js"></script>
+		<script src="module/all.js" type="text/javascript" charset="utf-8"></script>
+		<script src="module/other.js" type="text/javascript" charset="utf-8"></script>
+		<script src="module/ink1.js" type="text/javascript" charset="utf-8"></script>
+		<script src="module/ink2.js" type="text/javascript" charset="utf-8"></script>
+		<script src="module/pencil1.js" type="text/javascript" charset="utf-8"></script>
+		<script src="module/pencil2.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/index.js"></script>
+		<link rel="stylesheet" type="text/css" href="css/ink1.css"/>
+		<!--最大的js是index.js，所以该js文件得在最后引用。因为，该js会引用到其余的js。-->
+	</head>
+	<body>
+		<div class="leftpart">	
+		<ul>
+			<li><a href="#!/home">素描与绘画<br/>/</br>插画</a></li>
+			<li><a href="#!/home">约希富米·塔克达</a></li>
+			<li><img class="pic" src="image/i51.jpg"/></li>
+			<li>2015年以后</li>
+			<li>所有版权YOSHIFUMI TAKEDA</li>
+			
+		</ul>
+		<ul>
+			<li><a href="#!/home/all"><img src="image/ic_link.gif"/><img src="image/ic_link_active.png"/><span></span><b>all</b></a></li>
+			<li><a href="#!/home/ink1"><img src="image/ic_link.gif"/><img src="image/ic_link_active.png"/><span></span><b>INK_01</b></a></li>
+			<li><a href="#!/home/ink2"><img src="image/ic_link.gif"/><img src="image/ic_link_active.png"/><span></span><b>INK_02</b></a></li>
+			<li><a href="#!/home/pencil1"><img src="image/ic_link.gif"/><img src="image/ic_link_active.png"/><span></span><b>PANCIL_01</b></a></li>
+			<li><a href="#!/home/pencil2"><img src="image/ic_link.gif"/><img src="image/ic_link_active.png"/><span></span><b>PANCIL_02</b></a></li>
+			<li><a href="#!/home/other"><img src="image/ic_link.gif"/><img src="image/ic_link_active.png"/><span></span><b>other</b></a></li>
+		</ul>
+		<div class="footer">
+			<a href="#!/home/index"><img src="image/ic_link.gif"/><img src="image/ic_link_active.png"/><span></span><b>home</b></a><a href="#!/home/news"><img src="image/ic_link.gif"/><img src="image/ic_link_active.png"/><span></span><b>news</b></a><br />
+			<a href="#"> <img src="image/ic_mail.gif"/>ingkdg@fsaldkjfsldkfj.com</a>
+		</div>
+		</div>
+		<div class="rightpart" ui-view></div>
+		<!--这是最大的html，但该页面没有链接到home页面，只是会在home页面中显示一个动态的
+			内容该内容是ui-view关联的元素显示的内容。而home页面的跳转是在js/index.js里的			
+			$urlRouterProvider.otherwise("home")关联跳转的；
+		-->
+	</body>
+</html>
