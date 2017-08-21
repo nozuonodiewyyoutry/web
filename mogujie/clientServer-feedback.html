@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/clientServer.css"/>
+		<link rel="stylesheet" type="text/css" href="css/public.css"/>
+		<script type="text/javascript" src="js/jquery-3.2.1.min.js" ></script>
+		<script type="text/javascript" src="js/clientServer.js" ></script>
+	</head>
+	<body>
+		<div id="box">
+			<!--头部-->
+			<div class="header">
+				<div class="h_content">
+					<a href="index.html"><span></span>XXX首页</a>
+					<ul>
+						<li>
+							<a href="login.html" target="_black">注册</a>
+							<a href="login.html" target="_black">&nbsp;&nbsp;&nbsp;登录</a>
+						</li>
+						<li>
+							<a href="login.html" target="_black"><span></span>我的订单</a>
+						</li>
+						<li>
+							<a href="shoppingCart.html" target="_black"><span></span>购物车</a>
+							<div class="h_cart h_hidden_box">
+								<p>购物车里没有商品！</p>
+							</div>
+						</li>
+						<li>
+							<a href="clientServer.html" target="_black">客户服务<span class="l_corner"></span></a>
+							<div class="h_clientserver h_hidden_box">
+								<ul>
+									<li><a href="javascript:;">消费者服务</a></li>
+									<li><a href="javascript:;">商家服务</a></li>
+									<li><a href="javascript:;">规则中心</a></li>
+								</ul>
+							</div>
+						</li>
+						<li>
+							<a href="javascript:;"><span></span>我的小店<span class="l_corner"></span></a>
+							<div class="h_myshopstore h_hidden_box">
+								<ul>
+									<li><a href="javascript:;">管理后台</a></li>
+									<li><a href="javascript:;">商家社区</a></li>
+									<li><a href="javascript:;">商家培训</a></li>
+									<li><a href="javascript:;">市场入驻</a></li>
+								</ul>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div id="header">
+				<div id="header-container">
+					<a href="clientServer.html"><img src="img/upload_ie4gmztggrtdkobrg4zdambqgiyde_205x54.png"></a>
+					<ul>
+						<li><a href="clientServer.html">首页</a></li>
+						<li><a href="clientServer-commQuestion.html">常见问题</a></li>
+						<li><a href="clientServer-selfServer.html">自助服务</a></li>
+						<li><a href="clientServer-customService.html">联系客服</a></li>
+						<li><a href="clientServer-feedback.html" class="header-current">意见反馈</a></li>
+					</ul>
+					<input type="text" name="" id="" value="" placeholder="简要描述您遇到的问题"/>
+					<p><a href="clientServer-searchResult.html"><img src="img/upload_ifrdinjxgy4wgobrg4zdambqmeyde_11x14.png"/><span>搜索</span></a></p>
+				</div>
+			</div>
+			<!--主体-->
+			<div id="main">
+				<!--意见反馈-->
+				<div id="feedback">
+					<div class="server-title">意见反馈</div>
+					<div class="choose-sug">
+						<label>
+							<input type="radio" name="choose" id="" value=""/>
+							建议
+							<span>(系统、流程、规则等等，您觉得有什么不合理的地方就告诉我们吧！)</span>
+						</label>
+						<label>
+							<input type="radio" name="choose" id="" value=""/>
+							需求
+							<span>(功能上没有满足你的要求，那就告诉我们吧！)</span>
+						</label>
+						<label>
+							<input type="radio" name="choose" id="" value=""/>
+							异常
+							<span>(页面出现异常，无法正常使用。)</span>
+						</label>
+					</div>
+					<div class="input-sug">
+						<p>
+							<span>手机号码：</span>
+							<input type="text" placeholder="请输入手机号码"/>
+						</p>
+						<div>
+							<span>详细内容：</span>
+							<textarea placeholder="如果您有什么建议、想法和期望，请告诉我们"></textarea>
+						</div>
+						<div class="pic-selection">
+							<span>图片上传：</span>
+							<input type="file" value="" accept="image/gif,image/jpg,image/png"/>
+							<p>选择图片</p>
+							<div>（支持jpg/png/gif格式）</div>
+						</div>
+					</div>
+					<div class="pic-container"></div>
+					<button>提交</button>
+				</div>
+			</div>
+		</div>
+		<div class="alertbox">
+			<p></p>
+		</div>
+		<div class="footer">
+		<div class="f_content">
+			<div class="f_helper">
+				<ul>
+					<h4>- 新手帮助 -</h4>
+					<li><a href="javascript:;">常见问题</a></li>
+					<li><a href="javascript:;">自助服务</a></li>
+					<li><a href="javascript:;">联系客服</a></li>
+					<li><a href="javascript:;">意见反馈</a></li>
+				</ul>
+				<ul>
+					<h4>- 权益保障 -</h4>
+					<li>全国包邮</li>
+					<li>7天无理由退货</li>
+					<li>退货运费补贴</li>
+					<li>限时发货</li>
+				</ul>
+				<ul>
+					<h4>- 支付方式 -</h4>
+					<li>微信支付</li>
+					<li>支付宝</li>
+					<li>白付美支付</li>
+				</ul>
+				<ul>
+					<h4>- 移动客户端下载 -</h4>
+					<li>蘑菇街</li>
+					<li>美丽说</li>
+					<li>uni引力</li>
+				</ul>
+			</div>
+			<div class="f_otherlink">
+				<ul>
+					<li><a href="http://www.meilishuo.com/?mt=12.32159.r223043.29194&amp;acm=3.mce.1_10_19kqm.32159.0.3oWTQqozGVmva.m_223363-pos_0&amp;ptp=1._mf1_1239_15261._foot.0.8FFM4p&amp;f=mgjlm" target="_black">美丽说</a><span>|</span></li>
+					<li><a href="http://www.mogujie.com/game/?acm=3.mce.1_10_19kr2.32159.0.3oWTQqozGVmva.m_223371-pos_1&ptp=1._mf1_1239_15261._foot.0.8FFM4p&f=mgjlm" target="_black">蘑菇街游戏</a><span>|</span></li>
+					<li><a href="http://www.taofen8.com/?acm=3.mce.1_10_19kqq.32159.0.3oWTQqozGVmva.m_223365-pos_2" target="_black">淘粉吧</a><span>|</span></li>
+					<li><a href="http://ai.mogujie.com/dapei/?acm=3.mce.1_10_19kr4.32159.0.3oWTQqozGVmva.m_223372-pos_3&ptp=1._mf1_1239_15261._foot.0.8FFM4p&f=mgjlm" target="_black">穿衣搭配</a><span>|</span></li>
+					<li><a href="http://ai.mogujie.com/17moo0?acm=3.mce.1_10_19kr6.32159.0.3oWTQqozGVmva.m_223373-pos_4&ptp=1._mf1_1239_15261._foot.0.8FFM4p&f=mgjlm" target="_black">秋季女装新款</a><span>|</span></li>
+					<li><a href="http://ai.mogujie.com/18eak?acm=3.mce.1_10_19kr8.32159.0.3oWTQqozGVmva.m_223374-pos_5&ptp=1._mf1_1239_15261._foot.0.8FFM4p&f=mgjlm" target="_black">秋季连衣裙长袖</a><span>|</span></li>
+					<li><a href="http://ai.mogujie.com/11lyf2?acm=3.mce.1_10_19kra.32159.0.3oWTQqozGVmva.m_223375-pos_6&ptp=1._mf1_1239_15261._foot.0.8FFM4p&f=mgjlm" target="_black">秋季孕妇装</a><span>|</span></li>
+					<li><a href="http://qianbao.qq.com/?acm=3.mce.1_10_19krc.32159.0.3oWTQqozGVmva.m_223376-pos_7"  target="_black">QQ钱包</a><span>|</span></li>
+					<li><a href="http://www.chinasspp.com/?acm=3.mce.1_10_19kre.32159.0.3oWTQqozGVmva.m_223377-pos_8"  target="_black">时尚品牌网</a><span>|</span></li>
+					<li><a href="http://www.jia.com/?acm=3.mce.1_10_19krg.32159.0.3oWTQqozGVmva.m_223378-pos_9"  target="_black">装修</a><span>|</span></li>
+					<li><a href="http://ai.mogujie.com/dapei/1jdi?acm=3.mce.1_10_19kri.32159.0.3oWTQqozGVmva.m_223379-pos_10&ptp=1._mf1_1239_15261._foot.0.8FFM4p&f=mgjlm" target="_black">背带裤搭配 </a></li>
+					<li><a href="http://www.eelly.com/?acm=3.mce.1_10_19kqu.32159.0.3oWTQqozGVmva.m_223367-pos_11"  target="_black">衣联网</a><span>|</span></li>
+					<li><a href="http://www.boosj.com/?acm=3.mce.1_10_19kqw.32159.0.3oWTQqozGVmva.m_223368-pos_12"  target="_black">播视网视频</a><span>|</span></li>
+					<li><a href="http://www.hc360.com/?acm=3.mce.1_10_19kqy.32159.0.3oWTQqozGVmva.m_223369-pos_13"  target="_black">慧聪网</a><span>|</span></li>
+					<li><a href="http://ai.mogujie.com/dapei/1167u?acm=3.mce.1_10_19o9w.32159.0.3oWTQqozGVmva.m_225654-pos_14&ptp=1._mf1_1239_15261._foot.0.8FFM4p&f=mgjlm" target="_black">衬衫搭配</a><span>|</span></li>
+					<li><a href="http://ai.mogujie.com/dapei/16hle?acm=3.mce.1_10_19oa0.32159.0.3oWTQqozGVmva.m_225656-pos_15&ptp=1._mf1_1239_15261._foot.0.8FFM4p&f=mgjlm"  target="_black">牛仔外套搭配图片</a><span>|</span></li>
+					<li><a href="http://ai.mogujie.com/dapei/15jdxm?acm=3.mce.1_10_19oa2.32159.0.3oWTQqozGVmva.m_225657-pos_16&ptp=1._mf1_1239_15261._foot.0.8FFM4p&f=mgjlm"  target="_black">冬装时尚搭配</a><span>|</span></li>
+					<li><a href="http://ai.mogujie.com/dapei/125s5u?acm=3.mce.1_10_19oa4.32159.0.3oWTQqozGVmva.m_225658-pos_17&ptp=1._mf1_1239_15261._foot.0.8FFM4p&f=mgjlm"  target="_black">针织衫搭配</a><span>|</span></li>
+					<li><a href="http://ai.mogujie.com/dapei/11bm1q?acm=3.mce.1_10_19oa6.32159.0.3oWTQqozGVmva.m_225659-pos_18&ptp=1._mf1_1239_15261._foot.0.8FFM4p&f=mgjlm"  target="_black">牛仔衣搭配</a><span>|</span></li>
+					<li><a href="http://ai.mogujie.com/dapei/12u28?acm=3.mce.1_10_19oa8.32159.0.3oWTQqozGVmva.m_225660-pos_19&ptp=1._mf1_1239_15261._foot.0.8FFM4p&f=mgjlm" target="_black">风衣搭配</a><span>|</span></li>
+					<li><a href="http://ai.mogujie.com/cate/mei_0_mianmo_11y?acm=3.mce.1_10_19oac.32159.0.3oWTQqozGVmva.m_225662-pos_20&ptp=1._mf1_1239_15261._foot.0.8FFM4p&f=mgjlm" target="_black">补水面膜排行榜</a><span>|</span></li>
+					<li><a href="http://ai.mogujie.com/?acm=3.mce.1_10_19kr0.32159.0.3oWTQqozGVmva.m_223370-pos_21&ptp=1._mf1_1239_15261._foot.0.8FFM4p&f=mgjlm" target="_black">爱蘑菇街</a><span>|</span></li>
+				</ul>
+			</div>
+			<div class="f_info">
+				<ul>
+
+					<li><a href="javascript:;">关于我们</a></li>
+					<li><a href="javascript:;">招聘信息</a></li>
+					<li><a href="javascript:;">联系我们</a></li>
+					<li><a href="javascript:;">商家入驻</a></li>
+					<li><a href="javascript:;">商家后台</a></li>
+					<li><a href="javascript:;">蘑菇商学院</a></li>
+					<li><a href="javascript:;">商家社区</a></li>
+					<li><a href="javascript:;">©2017 Mogujie.com 杭州卷瓜网络有限公司</a></li>
+				</ul>
+			</div>
+			<div class="f_copyright">
+				<ul>
+					<li><span>营业执照注册号：</span><a href="javascript:;">330106000129004</a></li>
+					<li><span>网络文化经营许可证：</span><a href="javascript:;">浙网文（2016）0349-219号</a></li>
+					<li><span>增值电信业务经营许可证：</span><a href="javascript:;"> 浙B2-20110349</a></li>
+					<li><span>安全责任书</span></li>
+					<li><span> 浙公网安备</span><a href="javascript:;">33010602002329号</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	</body>
+</html>

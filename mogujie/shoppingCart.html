@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>我的购物车</title>
+    <link rel="stylesheet" href="css/shoppingCart.css" />
+    <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="js/shoppingCart.js"></script>
+    <link rel="stylesheet" href="css/public.css" />
+</head>
+<body>
+    
+    <!-- 头部 -->
+    <div class="header">
+        <div class="h_content">
+            <a href="index.html"><span></span>XXX首页</a>
+            <ul>
+                <li>
+                    <a href="login.html" target="_black">注册</a>
+                    <a href="login.html" target="_black">&nbsp;&nbsp;&nbsp;登录</a>
+                </li>
+                <li>
+                    <a href="login.html" target="_black"><span></span>我的订单</a>
+                </li>
+                <li>
+                    <a href="shoppingCart.html" target="_black"><span></span>购物车</a>
+                    <div class="h_cart h_hidden_box">
+                        <p>购物车里没有商品！</p>
+                    </div>
+                </li>
+                <li>
+                    <a href="clientServer.html" target="_black">客户服务<span class="l_corner"></span></a>
+                    <div class="h_clientserver h_hidden_box">
+                        <ul>
+                            <li><a href="javascript:;">消费者服务</a></li>
+                            <li><a href="javascript:;">商家服务</a></li>
+                            <li><a href="javascript:;">规则中心</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <a href="javascript:;"><span></span>我的小店<span class="l_corner"></span></a>
+                    <div class="h_myshopstore h_hidden_box">
+                        <ul>
+                            <li><a href="javascript:;">管理后台</a></li>
+                            <li><a href="javascript:;">商家社区</a></li>
+                            <li><a href="javascript:;">商家培训</a></li>
+                            <li><a href="javascript:;">市场入驻</a></li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- 侧面信息栏 -->
+    <div class="side_info">
+        <ul>
+            <li>
+                <a href="shoppingCart" target="_black">
+                    <span></span>
+                    <h5>购物车</h5>
+                </a>
+            </li>
+            <li>
+                <a href="javascript:;">
+                    <span></span>
+                    <h5>优惠券</h5>
+                </a>
+            </li>
+            <li>
+                <a href="javascript:;" target="_black">
+                    <span></span>
+                    <h5>钱包</h5>
+                </a>
+            </li>
+            <li>
+                <a href="javascript:;">
+                    <span></span>
+                    <h5>足迹</h5>
+                </a>
+            </li>
+        </ul>
+        <div class="back_top" >
+            <a href="javascript:;">
+                <span></span>
+            </a>
+        </div>
+    </div>
+    <div class="top_fixed_bar">
+        <div class="t_b_content">
+            <div class="t_b_logo"><a href="index.html"></a></div>
+            <!-- 搜索框 -->
+            <div class="t_b_search">
+                <div class="s_main">
+                    <div class="s_select">
+                        搜商品
+                        <span></span>
+                        <ol>
+                            <li>商品</li>
+                            <li>店铺</li>
+                        </ol>
+                    </div>
+                    <div class="s_content">
+                        <input type="text" class="search_txt" placeholder="软底网面运动鞋">
+                        <input type="button" class="search_but" value="搜&nbsp;&nbsp;索">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 头部结束-->
+
+    <!-- 身体部分 -->
+        <div id="body_wrap">
+            <!-- 购物车进度条 -->
+            <div class="g_header">
+                <div class="g_header_in">
+                    <!-- logo -->
+                    <div class="logo_cart"></div>
+                    <!-- 进度条 -->
+                    <div class="process_bar">
+                        <div class="md_process_sd"></div>
+                        <div class="md_process_box md_process_box1">1<br/>
+                            <span class="md_process_tip">购物车</span>
+                        </div>
+                        <div class="md_process_box md_process_box2">2<br/>
+                            <span class="md_process_tip">确认订单</span>
+                        </div>
+                        <div class="md_process_box md_process_box3">3<br/>
+                            <span class="md_process_tip">支付</span>
+                        </div>
+                        <div class="md_process_box md_process_box4">
+                            <img src="images/shoppingCartImg/right.png" height="23" width="23" alt=""><br/>
+                            <span class="md_process_tip">完成</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 购物车内容 -->
+            <div class="g_wrap">
+                <div class="cart_wrap">
+                    <!-- 不为空的情况 -->
+                    <div class="cart_slide">
+                        <ul>
+                            <li><a href="javascript:" class="cart_slide_xxk" id="xxk">全部商品<span>1</span></a></li>
+                            <li><a href="javascript:" id="xxk1">优惠<span>1</span></a></li>
+                            <li><a href="javascript:" class="cart_slide_not_allowed">库存紧张<span>0</span></a></li>
+                        </ul>
+
+                        <!-- 商品table -->
+                        <table class="cart_table">
+                            <thead>
+                                <tr>
+                                    <th><input type="checkbox" id="select" name="commodityCheckbox"/><label>全选</label></th>
+                                    <th></th>
+                                    <th>商品信息</th>
+                                    <th>单价(元)</th>
+                                    <th>数量</th>
+                                    <th>小计(元)</th>
+                                    <th>操作</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="cart_tr_1 tr1">
+                                    <td colspan="7">
+                                        <input type="checkbox" id="" name="commodityCheckbox" />
+                                        <a href="#" target="_blank" class="merchant_name">商家名称</a>
+                                        <a href="javascript:" class="customer_service"></a>
+                                    </td>
+                                </tr>
+                                <tr class="cart_tr_2 tr2">
+                                    <td><input type="checkbox" id="" class="commodityCheckbox" name="commodityCheckbox"></td>
+                                    <td>
+                                        <a href="javascript:" target="_blank" class="cart_goods_img"> 
+                                            <img class="cartImgTip" src="images/shoppingCartImg/commodityImg.jpg" title="夏上新韩版海军风短袖衬衫宽松轻薄衫衣女高腰a字半身裙时尚套装" >
+                                        </a>
+                                        <a href="javascript:" class="cart_goods_t" title="夏上新韩版海军风短袖衬衫宽松轻薄衫衣女高腰a字半身裙时尚套装" >夏上新韩版海军风短袖衬衫宽松轻薄衫衣女高腰a字半身裙时尚套装</a>
+                                    </td>
+                                    <td>
+                                        <p>颜色：图片色</p>
+                                        <p>尺码：L</p>
+                                    </td>
+                                    <td>
+                                        <p>112.86</p>
+                                        <p>79.00</p>
+                                        <p><span style="color:#ff5777;">7折</span> </p>
+                                    </td>
+                                    <td>
+                                        <div> 
+                                            <div class="cart_num" > 
+                                                <input maxlength="3" value="1" type="text" class="cart_num_input">  
+                                                <span class="cart_num_add">-</span> 
+                                                <span class="cart_num_reduce">+</span>  
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <p class="cart_price">79.00</p>
+                                    </td>
+                                    <td><a href="javascript:" id="delectCommodity">删除</a></td>
+                                </tr>
+                                <tr class="J_mundo"> 
+                                    <td colspan="7"> 
+                                        <div class="m_undo_wrap">成功删除 
+                                            <span class="J_num">1</span> 
+                                            件商品，如有误，可
+                                            <a href="javascript:;" class="J_undo">撤销本次删除</a>
+                                        </div> 
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <!-- 购物车底部 -->
+                        <div class="cart_bottom">
+                            <div class="cart_paybar_vmbox"> 
+                                <input type="checkbox" name="commodityCheckbox" id="select1">
+                                <label>全选</label>
+                                <a href="javascript:;" class="cartRemoveChecked" >删除</a>
+                                <a href="javascript:;" class="cartRemoveUnuse" >清空失效商品</a>
+                                <a href="javascript:;" class="cartRemoveToCollect">移入收藏夹</a>
+                            </div>
+                            <a href="shoppingOrder.html" class="goPayment" id="payBtn" target="_self">去付款</a>
+                            <div class="sumPrice">¥ 0.00</div>
+                            <div class="commodityNum"> 共有 <span class="sumNum">0</span> 件商品，总计： </div>
+                        </div>
+
+                    </div>
+                    <!-- 为空的情况 -->
+                    <div class="cart_page_wrap">
+                        <div class="cart_empty">
+                            <div class="cart_empty_icon"></div>
+                            <div class="cart_content">
+                                <h5 class="mb20">您的购物车还是空的，赶快去挑选商品吧！</h5>
+                                <ul class="cart_empty_list"> 
+                                    <li>去看看大家都喜欢的<a href="#" class="cart_red cart_uline">潮流单品</a></li> 
+                                    <li>去看看正在折扣中的优品<a href="#" class="cart_red cart_uline">团购</a></li> 
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <!-- 身体结束 -->
+
+    <!-- 尾部 -->
+    <div class="footer">
+        <div class="f_content">
+            <div class="f_helper">
+                <ul>
+                    <h4>- 新手帮助 -</h4>
+                    <li><a href="javascript:;">常见问题</a></li>
+                    <li><a href="javascript:;">自助服务</a></li>
+                    <li><a href="javascript:;">联系客服</a></li>
+                    <li><a href="javascript:;">意见反馈</a></li>
+                </ul>
+                <ul>
+                    <h4>- 权益保障 -</h4>
+                    <li>全国包邮</li>
+                    <li>7天无理由退货</li>
+                    <li>退货运费补贴</li>
+                    <li>限时发货</li>
+                </ul>
+                <ul>
+                    <h4>- 支付方式 -</h4>
+                    <li>微信支付</li>
+                    <li>支付宝</li>
+                    <li>白付美支付</li>
+                </ul>
+                <ul>
+                    <h4>- 移动客户端下载 -</h4>
+                    <li>蘑菇街</li>
+                    <li>美丽说</li>
+                    <li>uni引力</li>
+                </ul>
+            </div>
+            <div class="f_info">
+                <ul>
+
+                    <li><a href="javascript:;">关于我们</a></li>
+                    <li><a href="javascript:;">招聘信息</a></li>
+                    <li><a href="javascript:;">联系我们</a></li>
+                    <li><a href="javascript:;">商家入驻</a></li>
+                    <li><a href="javascript:;">商家后台</a></li>
+                    <li><a href="javascript:;">蘑菇商学院</a></li>
+                    <li><a href="javascript:;">商家社区</a></li>
+                    <li><a href="javascript:;">©2017 Mogujie.com 杭州卷瓜网络有限公司</a></li>
+                </ul>
+            </div>
+            <div class="f_copyright">
+                <ul>
+                    <li><span>营业执照注册号：</span><a href="javascript:;">330106000129004</a></li>
+                    <li><span>网络文化经营许可证：</span><a href="javascript:;">浙网文（2016）0349-219号</a></li>
+                    <li><span>增值电信业务经营许可证：</span><a href="javascript:;"> 浙B2-20110349</a></li>
+                    <li><span>安全责任书</span></li>
+                    <li><span> 浙公网安备</span><a href="javascript:;">33010602002329号</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- 尾部结束 -->
+</body>
+</html>

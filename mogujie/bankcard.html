@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+         <title>账号管理</title>
+        <link rel="stylesheet" href="css/bankcard.css" />
+        <link rel="stylesheet" href="css/public.css" />
+        <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+        <script type="text/javascript" src="js/bankcard.js"></script>
+    </head>
+    <body>
+        <div class="header">
+                <div class="h_content">
+                    <a href="index.html"><span></span>蘑菇街首页</a>
+                    <div id="pur_h_login" class="pur_h_login">
+                        <a href="javascript:;">安全退出</a>
+                    </div>
+                </div>
+        </div>
+        <div class="head_box">
+                <div class="header_con">
+                        <div class="header_img"><a href="javascript:;" class="pur_header_logo">我的钱包</a></div>
+                        <div class="header_nav">
+                             <ul>
+                                 <li><a href="purse.html">首页</a></li>
+                                 <li class="header_active"><a href="javascript:;">账号管理</a></li>
+                                 <li><a href="javascript:;">资金管理</a></li>
+                                 <li><a href="javascript:;">理财</a></li>
+                                 <li><a href="javascript:;">帮助中心</a></li>
+                             </ul>
+                        </div>
+                </div>
+        </div>
+        <!--header   end-->
+        <div class="body_warp">
+            <div class="warp_content">
+                <div class="me_nav_warp">
+                    <div class="me_nav">
+                        <div class="me_nav_title">账户管理</div>
+                        <ul class="me_nav_ul">
+                            <li class="">
+                                <a href="javascript:;">账号信息</a>
+                            </li>
+                            <li>
+                                <a href="#" target="">我的银行卡</a>
+                            </li>
+                            <li>
+                                <a href="javascript:;">实名认证</a>
+                            </li>
+                            <li>
+                                <a href="javascript:;">修改钱包手机号</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="mybank">
+                        <div class="bank_container">
+                                <div class="bank_title">我的银行卡</div>
+                                <div class="bank_content">
+                                    <div class="bank_c_body">
+                                        <div class="bank_card">
+                                            <script>
+                                                    (function(){
+                                                        var lp=location.href;
+                                                        var j='/addcard?redirect=';
+                                                        var href=j+lp;
+                                                        var str='<a class="bank_add" href="'+href+'">'+'<div class="bank_txt">添加银行卡</div>'+'</a>';
+                                                        document.write(str)
+                                                    }())
+                                            </script>
+                                            <a href="javascript:;"class="bank_add">
+                                                <div class="bank_txt">添加银行卡</div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="bank_number_box"  >
+                                        <div class="bank_mess" >你正在开通银行卡支付服务，无需网银，下次凭短信验证码即可完成支付，安全快捷！</div>
+                                        <div class="bank_number_con">
+                                            <p class="bank_mb">
+                                                   <label >输入银行卡号：</label>
+                                                   <input type="text"  value  placeholder="直接输入银行卡号进行识别"  name="cardnumber" class="numbertxt" /> 
+                                                   <span class="card_numtip" style="display:none;"></span>
+                                            </p>
+                                            <p class="bank_mc">
+                                                 <label ></label>
+                                                 <a href="javascript:;" class="bank_x">下一步</a> 
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                        </div>
+                </div>
+            </div>                       
+        </div>
+    </body>
+</html>

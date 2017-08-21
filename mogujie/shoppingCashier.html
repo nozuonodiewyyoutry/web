@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>收银台</title>
+    <link rel="stylesheet" href="css/public.css" />
+    <link rel="stylesheet" href="css/shoppingCashier.css" />
+    <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="js/shoppingCashier.js"></script>
+</head>
+<body>
+    <!-- 头部 -->
+    <div class="side_info">
+        <ul>
+            <li>
+                <a href="shoppingCart" target="_black">
+                    <span></span>
+                    <h5>购物车</h5>
+                </a>
+            </li>
+            <li>
+                <a href="javascript:;">
+                    <span></span>
+                    <h5>优惠券</h5>
+                </a>
+            </li>
+            <li>
+                <a href="javascript:;" target="_black">
+                    <span></span>
+                    <h5>钱包</h5>
+                </a>
+            </li>
+            <li>
+                <a href="javascript:;">
+                    <span></span>
+                    <h5>足迹</h5>
+                </a>
+            </li>
+        </ul>
+        <div class="back_top" >
+            <a href="javascript:;">
+                <span></span>
+            </a>
+        </div>
+    </div>
+    <!-- 头部结束 -->
+
+    <div id="body_wrap">
+            <!-- 购物车进度条 -->
+            <div class="g_header">
+                <div class="g_header_in">
+                    <!-- logo -->
+                    <div class="logo_cart"></div>
+                    <!-- 进度条 -->
+                    <div class="process_bar">
+                        <div class="md_process_sd"></div>
+                        <div class="md_process_box md_process_box1">1<br/>
+                            <span class="md_process_tip">购物车</span>
+                        </div>
+                        <div class="md_process_box md_process_box2">2<br/>
+                            <span class="md_process_tip">确认订单</span>
+                        </div>
+                        <div class="md_process_box md_process_box3">3<br/>
+                            <span class="md_process_tip">支付</span>
+                        </div>
+                        <div class="md_process_box md_process_box4">
+                            <img src="images/shoppingCartImg/right.png" height="23" width="23" alt=""><br/>
+                            <span class="md_process_tip">完成</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 身体部分 -->
+            <div class="g-wrap">
+                <div class="md_order_head">
+                    <h2 class="tit_product">夏上新韩版海军风短袖衬衫宽松轻薄衫衣女高腰a字半身裙时尚套装</h2>
+                    <span class="J_cashierTimer"><span>请您于</span>
+                    <span class="color_red" id="djs">0时00分00秒</span><span>内完成支付</span></span>
+                    <span class="tit_fw">(逾期将被取消)</span>
+                </div>
+            </div>
+
+            <div class="md_discount">
+                <ul>
+                    <li class="li1">
+                        <span class="icon_wechatPay"></span>
+                        <span class="earnname">微信支付</span>
+                        <span class="paynum">
+                            实付金额：<span class="num">￥56.20</span>
+                        </span>
+
+                        <div class="md_paytab wx_md_paytab">
+                            <div class="code2_wechat">
+                                <div class="code_wrap">
+                                  <img class="J_wechatCode" src="images/shoppingCartImg/erweima.png">
+                                </div>
+                                <div class="tip">
+                                    <h5>请使用微信扫描二维码<br>以完成支付</h5>
+                                    <p>
+                                        <a href="http://www.mogujie.com/trade/faq/index?id=1ea" target="_blank" class="link">详细使用帮助</a>
+                                    </p>
+                                    <p>（如果支付遇到问题，可
+                                        <a href="http://www.mogujie.com/service?con=contactService" target="_blank" class="link">联系客服</a>）
+                                    </p>
+                                </div>
+                              </div>
+                        </div>
+                    </li>
+                    <li class="li2">
+                        <span class="zfb_icon_wechatPay "></span>
+                        <span class="zfb_earnname">支付宝支付</span>
+                        <span class="zfb_paynum">
+                            实付金额：<span class="zfb_num">￥56.20</span>
+                        </span>
+
+                        <div class="md_paytab zfb_md_paytab">
+                            <div class="zfb_title">
+                                <div class="title">使用支付宝钱包扫码支付</div>
+                                <div class="zfb_ewm">
+                                    <img src="images/shoppingCartImg/zhifubao.png"/>
+                                </div>
+                            </div>
+                            <div class="zfb_computer_title">
+                                <div class="title">使用电脑支付</div>
+                                <div class="computer_pic"></div>
+                                <a href="shoppingComplete.html">确认并付款</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="li3">
+                        <span class="earnname">网上银行</span>
+                        <span class="zfb_paynum">
+                            实付金额：<span class="zfb_num">￥56.20</span>
+                        </span>
+                        <ul>
+                            <li><span><img src="images/shoppingCartImg/0001.jpg"/></span></li>
+                            <li><span><img src="images/shoppingCartImg/0002.jpg"/></span></li>
+                            <li><span><img src="images/shoppingCartImg/0003.jpg"/></span></li>
+                            <li><span><img src="images/shoppingCartImg/0004.jpg"/></span></li>
+                            <li><span><img src="images/shoppingCartImg/0005.jpg"/></span></li>
+                            <li><span><img src="images/shoppingCartImg/0006.jpg"/></span></li>
+                            <li><span><img src="images/shoppingCartImg/0007.jpg"/></span></li>
+                            <li><span><img src="images/shoppingCartImg/0008.jpg"/></span></li>
+                            <li><span><img src="images/shoppingCartImg/0009.jpg"/></span></li>
+                            <li><span><img src="images/shoppingCartImg/0010.jpg"/></span></li>
+                            <li><span><img src="images/shoppingCartImg/0011.jpg"/></span></li>
+                            <li><span><img src="images/shoppingCartImg/0012.jpg"/></span></li>
+                            <li><span><img src="images/shoppingCartImg/0016.jpg"/></span></li>
+                            <li><span><img src="images/shoppingCartImg/0017.jpg"/></span></li>
+                            <li><span><img src="images/shoppingCartImg/0019.jpg"/></span></li>
+                        </ul>
+                        <div class="qrfk">
+                            <a href="shoppingComplete.html" class="J_payOrder">确认并付款</a>
+                        </div>
+                    </li>
+
+                </ul>
+            <p class="bottom_tip">暂不支持银行卡支付，请选择其他支付方式</p>
+            </div>
+            <!-- 身体结束 -->
+    </div>
+</body>
+</html>

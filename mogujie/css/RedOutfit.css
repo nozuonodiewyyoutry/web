@@ -1,0 +1,46 @@
+ul,ol{list-style: none;}
+a{text-decoration: none;}
+*{margin: 0;padding: 0;}
+
+
+/*  中间大图 */
+.body_wrap{width:100%;min-height: 500px;}
+.banner-wrap{width:100%;height:320px;border-top: 2.5px solid #FF4466;background-color: #ffcbae;text-align: center;overflow: hidden;}
+.banner-wrap img{margin:0 auto;width:1200px;height:320px;}
+
+/* 红人穿搭 */ 
+.nav-wrap{width:100%;height:100px; background-color: #fff;}
+.nav{width:1200px; height:100%; margin:0px auto;margin-top: 20px;}
+.nav-title{height:20px;line-height: 20px;font-size: 16px;color:#333;margin-bottom: 20px;}
+.nav-title a{color:#333;}
+.nav-wrapper{position:relative;}
+.nav-viewport{width:100%;height:63px;overflow:hidden;position:relative;}
+.nav-list{width:2715%;height:63px;position:relative;transition-duration: 0s;transform: translate3d(0px,0px,0px);}
+.nav-list li{width:111px;height:63px;float:left;margin-right: 10px;position:relative;line-height: 55px;text-align: center;color:#fff;font-size: 16px;font-weight: 500;cursor: pointer;}
+.item-tab{width:111px;height:55px;border-radius: 6px;}
+.mc{margin-right: 10px;}
+.f1{background-color: #deb07a;}
+.f2{background-color: #cbbb97;}
+.f3{background-color: #e6beb0;}
+.f4{background-color: #d3acac;}
+.f5{background-color: #bfd5d3;}
+.f6{background-color: #c5bedc;}
+.f7{background-color: #e7b9a9;}
+.f8{background-color: #c0ceb0;}
+.f9{background-color: #dad6a4;}
+.f10{background-color: #CBB0D3;}
+.current{width:111px;height:63px;position:absolute;top:0;left:0;background: url(../images/RedOutfit/dj.png) no-repeat;}
+.nav-tm{width:111px;height:55px;border-radius: 6px;background-color: rgba(0,0,0,0.3);position:absolute;top:0;left:0;display:none;z-index:99;}
+.nav-list li:hover .nav-tm{display:block;}
+#perv{width:20px;height:36px;position:absolute;top:9px;left:0;z-index: 99;display:none;}
+#next{width:20px;height:36px;position:absolute;top:9px;right:0;z-index: 99;}
+
+/* 商品 */
+.pool-wrap{width:100%;height: 2500px;background-color: #F7F7F7;}
+.pool-list{width:1200px;margin:30px auto 0;}
+.pool-item{width:232px;height:552px;float:left;background-color: #fff;border-radius: 6px;margin:30px 4px 12px;}
+.pool-item .pool-img{width:232px;height:464px;border-top-left-radius: 6px;border-top-right-radius: 6px;}
+.detail{padding:16px 20px 0;width:100%;height:88px;}
+.detail .content-title{width:100%;height:21px;line-height: 21px;margin-bottom: 10px;overflow:hidden;text-overflow: ellipsis;white-space: nowrap;font-size: 16px;letter-spacing: 1px;color:#333;}
+.detail .user-wrap img{width:24px;height:24px;border-radius: 999px;vertical-align: middle;float:left;}
+.detail .user-wrap .user-name{display:inline-block;vertical-align: middle;width:158px;height:16px;margin-left: 10px;overflow:hidden;text-overflow: ellipsis;white-space: nowrap;font-size: 12px;letter-spacing: 1px;color:#333;}

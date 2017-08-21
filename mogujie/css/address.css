@@ -1,0 +1,61 @@
+body, button, input, select, textarea {
+    font: 12px/1.6 tahoma,arial,sans-serif;
+}
+.claer{clear:both;}
+/* 个人设置区style */
+.top_bar{border-bottom: 2px solid #ff1779;padding-bottom: 10px;}
+.body_wrap { margin-top: 20px;width: 100%;height: auto; float: left; }
+.navliswrap{width:1200px;height:700px;margin:0 auto;}
+/* 个人设置侧栏区style */
+.me_nav_wrap{float: left;width: 140px;margin-right: 20px;background: #fafafa;/*height:680px;*/}
+.me_nav_info{padding: 20px 0;}
+.me_nav_img{ position: relative;margin: 0 auto;padding: 5px;width: 100px;height: 100px;}
+.me_nav_mk{position: absolute;top: 0;left: 0;width: 110px;height: 110px;background:url(../images/personalImg/2.png)  0  0  no-repeat;}
+.me_nav_name{padding: 0 10px;text-align: center;font: normal 12px/32px helvetica,tahoma,arial,sans-serif;color: #333;}
+.me_nav{padding: 0 20px;}
+.me_title{cursor: pointer;border-top: 1px solid #e1e1e1;font: normal 16px/56px Microsoft YaHei,sans-serif;color: #333;background: url(../images/personalImg/1.png) 72px -3px no-repeat; }
+.me_title1{background: url(../images/personalImg/1.png) 72px -62px no-repeat;}
+.me_title a{color:#333;}
+.me_nav_ul{display: none;margin: 0 -20px 13px;font: normal 12px/26px helvetica,tahoma,arial,sans-serif;}
+.me_nav .me_nav_ul a{display:block;padding-left: 20px;color: #666;}
+.me_nav .me_title a{display:block;}
+.me_nav .me_nav_ul a:hover{color:#ff4466;}
+/* 个人设置地址管理区style */
+
+.address_wrap{min-height: 300px;float: left;padding-bottom: 20px;}
+.address_box{float: left;width: 800px;}
+.add_title{padding-left: 20px;line-height: 43px;height: 43px;font-size: 16px;color: #333;border-bottom: 1px solid #dfdfdf;font-weight: 400;}
+.add_edit{padding: 18px 18px 50px;}
+.add_newadd span{float: left;overflow: hidden;height: 32px;line-height: 32px;width: 115px;text-indent: -999em;cursor: pointer;background:url(../images/personalImg/3.png) no-repeat; }
+.add_newadd:after{content: ".";display: block;height: 0;font-size: 0;clear: both;visibility: hidden;}
+.address_hide{display:none;}
+.addressbox{display: none;margin-top: 10px;background: #fafafa;border: 1px solid #efefef;padding: 20px;margin-bottom: 30px;}
+.address_pop{margin: 30px 0 20px;background: #fafafa;border: 1px solid #efefef;position: relative;padding: 20px 20px 20px 0;line-height: 38px;}
+.address_pop dt{position: absolute;left: 0; width: 90px;color: #666;text-align: right;}
+.address_pop dd{position: relative;padding-left: 114px;display: block;}
+.address_pop span{padding-left: 8px;color: #999;position: relative;padding: 20px 20px 20px 0;line-height: 38px;}
+.address_pop textarea{ margin-top: 5px;margin-bottom: 5px;padding: 6px 8px;line-height: 16px;color: #666;border: 1px solid #c7c7c7;border-radius: 2px;vertical-align: top;width: 90%;}
+.needicon{position: absolute;top: 14px;left: 95px;color: #ff5a00;font-size: 14px;line-height: 14px;font-style: normal;}
+.dd_address select{vertical-align: middle;width: 140px;}
+.dd_address select option{font-weight: normal;display: block;white-space: pre;min-height: 1.2em;padding: 0px 2px 1px;}
+.prompt_span1{padding-left: 8px;color: #999;}
+.ipt_text{margin-top: 5px;margin-bottom: 20px;padding: 6px 8px;height: 12px;line-height: 12px;color: #666;border: 1px solid #c7c7c7;border-radius: 2px;vertical-align: middle;width: 120px;}
+.prompt_span3{display: block;padding-left: 8px;color: #999;}
+.confirm_btn{display: inline-block;height: 34px;font: 0/0 a;overflow: hidden;width: 104px;background: url(../images/personalImg/4.png) -200px -217px no-repeat;text-decoration: none;color: #333;}
+.cancel_btn{width: 68px;background: url(../images/personalImg/4.png)  -200px -251px no-repeat;display: inline-block;height: 34px;font: 0/0 a;overflow: hidden;width: 104px;text-decoration: none;color: #333;margin-left: 10px;}
+/* 创建地址style */
+.addr_create{margin-top: 10px;padding: 13px 17px;border: 1px solid #efefef;background: #fafafa;}
+.addr_create li{float: left;line-height: 20px;color: #333;}
+.addr_create li .name{width: 55px;margin-right: 5px;word-wrap: break-word;word-break: normal;}
+.addr_create li .addr{width: 300px;}
+.addr_create li.zcode {width: 50px;}
+.addr_create li.oper {float: right;}
+.addr_create li.enaddr {padding-left: 54px;width: 680px;}
+.addr_create:after{    content: ".";display: block;height: 0;font-size: 0;clear: both;visibility: hidden;}
+/* 钱包style */
+.purse_header{height: 110px;margin-bottom: 20px;background: url(../images/personalImg/1.jpg) 50% repeat-x;}
+.wrap{width: 1200px;margin-left: auto;margin-right: auto;}
+.purse_header_img{width: 70px;height: 70px;border-radius: 50%; float: left;margin-top: 20px;}
+.pur_c{width:600px;padding: 27px 0 0 20px;}
+.pur_r{line-height: 24px;white-space: nowrap;}
+.pur_header_icon{background: hsla(0,0%,100%,.5);width: 26px;height: 26px;border-radius: 50%;display: block;float: left;position: relative;margin-right: 10px;}

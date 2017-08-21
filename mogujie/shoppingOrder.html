@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>确认订单</title>
+    <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+    <link rel="stylesheet" href="css/public.css" />
+    <link rel="stylesheet" href="css/shoppingOrder.css" />
+    <script type="text/javascript" src="js/address.js"></script>
+    <script type="text/javascript" src="js/china_area.js"></script>
+    <script type="text/javascript" src="js/shoppingOrder.js"></script>
+</head>
+<body>
+        <!-- 头部 -->
+    <div class="header">
+        <div class="h_content">
+            <a href="index.html"><span></span>XXX首页</a>
+            <ul>
+                <li>
+                    <a href="login.html" target="_black">注册</a>
+                    <a href="login.html" target="_black">&nbsp;&nbsp;&nbsp;登录</a>
+                </li>
+                <li>
+                    <a href="login.html" target="_black"><span></span>我的订单</a>
+                </li>
+                <li>
+                    <a href="shoppingCart.html" target="_black"><span></span>购物车</a>
+                    <div class="h_cart h_hidden_box">
+                        <p>购物车里没有商品！</p>
+                    </div>
+                </li>
+                <li>
+                    <a href="clientServer.html" target="_black">客户服务<span class="l_corner"></span></a>
+                    <div class="h_clientserver h_hidden_box">
+                        <ul>
+                            <li><a href="javascript:;">消费者服务</a></li>
+                            <li><a href="javascript:;">商家服务</a></li>
+                            <li><a href="javascript:;">规则中心</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <a href="javascript:;"><span></span>我的小店<span class="l_corner"></span></a>
+                    <div class="h_myshopstore h_hidden_box">
+                        <ul>
+                            <li><a href="javascript:;">管理后台</a></li>
+                            <li><a href="javascript:;">商家社区</a></li>
+                            <li><a href="javascript:;">商家培训</a></li>
+                            <li><a href="javascript:;">市场入驻</a></li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- 侧面信息栏 -->
+    <div class="side_info">
+        <ul>
+            <li>
+                <a href="shoppingCart" target="_black">
+                    <span></span>
+                    <h5>购物车</h5>
+                </a>
+            </li>
+            <li>
+                <a href="javascript:;">
+                    <span></span>
+                    <h5>优惠券</h5>
+                </a>
+            </li>
+            <li>
+                <a href="javascript:;" target="_black">
+                    <span></span>
+                    <h5>钱包</h5>
+                </a>
+            </li>
+            <li>
+                <a href="javascript:;">
+                    <span></span>
+                    <h5>足迹</h5>
+                </a>
+            </li>
+        </ul>
+        <div class="back_top" >
+            <a href="javascript:;">
+                <span></span>
+            </a>
+        </div>
+    </div>
+    <div class="top_fixed_bar">
+        <div class="t_b_content">
+            <div class="t_b_logo"><a href="index.html"></a></div>
+            <!-- 搜索框 -->
+            <div class="t_b_search">
+                <div class="s_main">
+                    <div class="s_select">
+                        搜商品
+                        <span></span>
+                        <ol>
+                            <li>商品</li>
+                            <li>店铺</li>
+                        </ol>
+                    </div>
+                    <div class="s_content">
+                        <input type="text" class="search_txt" placeholder="软底网面运动鞋">
+                        <input type="button" class="search_but" value="搜&nbsp;&nbsp;索">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 头部结束-->
+
+    <!-- 身体部分 -->
+    <div id="body_wrap">
+            <!-- 购物车进度条 -->
+            <div class="g_header">
+                <div class="g_header_in">
+                    <!-- logo -->
+                    <div class="logo_cart"></div>
+                    <!-- 进度条 -->
+                    <div class="process_bar">
+                        <div class="md_process_sd"></div>
+                        <div class="md_process_box md_process_box1">1<br/>
+                            <span class="md_process_tip">购物车</span>
+                        </div>
+                        <div class="md_process_box md_process_box2">2<br/>
+                            <span class="md_process_tip">确认订单</span>
+                        </div>
+                        <div class="md_process_box md_process_box3">3<br/>
+                            <span class="md_process_tip">支付</span>
+                        </div>
+                        <div class="md_process_box md_process_box4">
+                            <img src="images/shoppingCartImg/right.png" height="23" width="23" alt=""><br/>
+                            <span class="md_process_tip">完成</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 选择收货地址 -->
+            <div class="cart_wrap">
+                <div class="cart_page_wrap">
+                    <h2>选择收货地址</h2>
+
+                     <!-- 已经有地址 -->
+                    <div class="cart_address_wrap" > 
+                        <ul class="cart_address_list">   
+                            <li data-aid="503233169"> 
+                                <a href="javascript:;" class="cart_address_card"> 
+                                    <i class="cart_address_default">默认地址</i> 
+                                    <h5 class="cart_address_tit">帅晴</h5> 
+                                    <p class="cart_address_street">海南生态软件园</p>
+                                    <p class="cart_address_zipinfo">海南省海口市美兰区  571900</p> 
+                                    <p class="cart_address_mobile">18774827152</p> 
+                                    <i class="cart_address_edit" style="display: none;">编辑</i> 
+                                </a> 
+                            </li>
+                        </ul> 
+                        </div>
+
+                    <div class="cartAddress">
+                        <ul>
+                            <li><a href="#">管理收货地址</a></li>
+                            <li class="newDress"><a href="#" >使用新地址</a></li>
+                        </ul>
+                    </div>
+                    <!-- 没有添加地址 -->
+                    <div class="J_otherAddrWrap" style="display: none;">
+                        <div class="address_hide">
+                                         <div class="addressbox" id="addressbox"></div>
+                                         <div class="addwraper">
+                                                <div class="addresspop">
+                                                    <dl class="address_pop">
+                                                         <input type="hidden" name="addressId" value class="addressId_a">
+                                                         <input type="hidden" name="addressId" value="false" class="addressId_b">
+                                                         <dt>省：</dt> 
+                                                         <dd class="dd_address">
+                                                               <i class="needicon">*</i>
+                                                               <select class="selProvince">
+                                                                    <option value='0'>请选择</option>
+                                                               </select>
+                                                               <label class="dt">市：</label>
+                                                               <select class="selCity">
+                                                                    <option value='0'>请选择</option>
+                                                               </select>
+                                                               <label class="dt">区：</label>
+                                                               <select class="selDistrict">
+                                                                    <option value='0'>请选择</option>
+                                                               </select>
+                                                               <span class="prompt_span1"></span>
+                                                         </dd>
+                                                         <dt>邮政编码：</dt>
+                                                         <dd>
+                                                             <i class="needicon">*</i>
+                                                             <input type="text" name="" value="" placeholder=""class="ipt_text">
+                                                             <span class="prompt_span2"></span>  
+                                                         </dd>
+                                                         <dt>街道地址：</dt>
+                                                         <dd>
+                                                             <i class="needicon">*</i>
+                                                             <textarea name="street" class="add_text" data-type="*" data-min="5" data-max="100" data-nomal="请填写街道地址，最少5个字，最多不能超过100个字" cols="30" rows="3"></textarea>
+                                                             <span class="prompt_span3">请填写街道地址，最少5个字，最多不能超过100个字</span>
+                                                         </dd>
+                                                         <dt>收货人姓名：</dt>
+                                                         <dd>
+                                                             <i class="needicon">*</i>
+                                                             <input type="text" name="" value="" placeholder="" class="ipt_text">
+                                                             <span class="prompt_span5"></span>  
+                                                         </dd>
+                                                         <dt>手机：</dt>
+                                                         <dd>
+                                                             <i class="needicon">*</i>
+                                                             <input type="text" name="" value="" placeholder="" class="ipt_text">
+                                                             <span class="prompt_span6"></span>  
+                                                         </dd>
+                                                         <dt></dt>
+                                                         <dd>
+                                                               <a href="javascript:;" class="confirm_btn">确认地址</a>
+                                                               <a href="javascript:;" class="cancel_btn">取消</a>
+                                                         </dd>
+                                                    </dl>
+                                                </div>
+                                         </div>
+                        </div>
+                    </div>
+    
+                    <h2>确认商品信息</h2>
+                    <!-- 商品表格 -->
+                    <table class="cart_table">
+                        <thead>
+                            <tr>
+                                <th class="cart_table_goods_wrap">商品</th>
+                                <th class="cart_table_goodsinfo_wrap">商品信息</th>
+                                <th>单价(元)</th>
+                                <th>数量</th>
+                                <th class="cart_table_goodscut_wrap">优惠</th>
+                                <th class="cart_table_goodsctrl_wrap">小计(元)</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="cart_tr1"> 
+                                <td colspan="6" class="cart_group_head"> 
+                                    <label class="cart_lightgray">店铺：</label>   
+                                    <a href="javascript:;" target="_blank" class="cart_hoverline">商家名称</a>  
+                                    <a href="javascript:;" class="cart_im_btn"></a>    
+                                </td> 
+                            </tr>
+                            <tr class="cart_tr2">
+                                <td class="cart_table_goods_wrap">
+                                    <a href="javascript:" target="_blank" class="cart_goods_img"> 
+                                            <img class="cartImgTip" src="images/shoppingCartImg/commodityImg.jpg" title="夏上新韩版海军风短袖衬衫宽松轻薄衫衣女高腰a字半身裙时尚套装" >
+                                        </a>
+                                        <a href="javascript:" class="cart_goods_t" title="夏上新韩版海军风短袖衬衫宽松轻薄衫衣女高腰a字半身裙时尚套装" >夏上新韩版海军风短袖衬衫宽松轻薄衫衣女高腰a字半身裙时尚套装</a>
+                                </td>
+                                <td>
+                                    <p>颜色：图片色</p>
+                                    <p>尺码：L</p>
+                                </td>
+                                <td>
+                                    <p>79.00</p>
+                                </td>
+                                <td>
+                                    <p>1</p>
+                                </td>
+                                <td>
+                                    <p>7折: 省22.80元</p>
+                                </td>
+                                <td>
+                                    <p>56.20</p>
+                                </td>
+                            </tr>
+                            <tr class="cart_tr3">
+                                <td colspan="6" class="cart_largepding"> 
+                                    <label>备注：</label> 
+                                    <input class="cart_table_note" name="" placeholder="补充填写其他信息，如有快递不到也请留言备注" style="color: rgb(204, 204, 204);" value="补充填写其他信息，如有快递不到也请留言备注" type="text"> 
+                                    <div class="cart_table_discount"> 
+                                        <label>快递公司：</label>  
+                                        <select name="" class="postage cart_vm">  
+                                            <option selected="selected">全国包邮</option>  
+                                        </select>  
+                                        <span>快递运费：<strong class="J_ShipExpense">¥ 0.00</strong></span> 
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr class="cart_tr4">
+                                <td colspan="6" class="cart_largepding"> 
+                                    <div class="cart_table_disduce"> 合计：
+                                        <span class="cart_red">56.20</span>
+                                        <input class="shoppro" value="-1" name="" type="hidden"> 
+                                    </div> 
+                                </td> 
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <!-- 底部显示价格 -->
+                    <div class="cart_paybar"> 
+                        <a href="shoppingCashier.html" class="cart_surebtn">确认并付款 &gt;</a> 
+                        <span class="cart_paybar_info_cost">¥56.20</span> 
+                        <div class="cart_paybar_info">共有
+                            <span class="cart_red goodsNum">1</span> 件商品，总计:
+                        </div> 
+                        <a href="shoppingCart.html" target="_self" class="cart_back">返回购物车</a> 
+                    </div>
+                </div>                
+            </div>
+        </div>
+    <!-- 身体结束 -->
+
+    <!-- 底部 -->
+    <div class="footer">
+        <div class="f_content">
+            <div class="f_helper">
+                <ul>
+                    <h4>- 新手帮助 -</h4>
+                    <li><a href="javascript:;">常见问题</a></li>
+                    <li><a href="javascript:;">自助服务</a></li>
+                    <li><a href="javascript:;">联系客服</a></li>
+                    <li><a href="javascript:;">意见反馈</a></li>
+                </ul>
+                <ul>
+                    <h4>- 权益保障 -</h4>
+                    <li>全国包邮</li>
+                    <li>7天无理由退货</li>
+                    <li>退货运费补贴</li>
+                    <li>限时发货</li>
+                </ul>
+                <ul>
+                    <h4>- 支付方式 -</h4>
+                    <li>微信支付</li>
+                    <li>支付宝</li>
+                    <li>白付美支付</li>
+                </ul>
+                <ul>
+                    <h4>- 移动客户端下载 -</h4>
+                    <li>蘑菇街</li>
+                    <li>美丽说</li>
+                    <li>uni引力</li>
+                </ul>
+            </div>
+            <div class="f_info">
+                <ul>
+
+                    <li><a href="javascript:;">关于我们</a></li>
+                    <li><a href="javascript:;">招聘信息</a></li>
+                    <li><a href="javascript:;">联系我们</a></li>
+                    <li><a href="javascript:;">商家入驻</a></li>
+                    <li><a href="javascript:;">商家后台</a></li>
+                    <li><a href="javascript:;">蘑菇商学院</a></li>
+                    <li><a href="javascript:;">商家社区</a></li>
+                    <li><a href="javascript:;">©2017 Mogujie.com 杭州卷瓜网络有限公司</a></li>
+                </ul>
+            </div>
+            <div class="f_copyright">
+                <ul>
+                    <li><span>营业执照注册号：</span><a href="javascript:;">330106000129004</a></li>
+                    <li><span>网络文化经营许可证：</span><a href="javascript:;">浙网文（2016）0349-219号</a></li>
+                    <li><span>增值电信业务经营许可证：</span><a href="javascript:;"> 浙B2-20110349</a></li>
+                    <li><span>安全责任书</span></li>
+                    <li><span> 浙公网安备</span><a href="javascript:;">33010602002329号</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- 底部结束 -->
+</body>
+</html>

@@ -1,0 +1,42 @@
+*{margin: 0;padding: 0;font:12px/1.5 "PingFang SC","Helvetica Neue",Helvetica,Arial,"Hiragino Sans GB","Microsoft Yahei","微软雅黑",STHeiti,"华文细黑";}
+ul,ol{list-style: none;}
+a {text-decoration: none;}
+i,cite,em,var{font-style: italic;}
+
+
+.boay-wrap{width: 100%;background-color: #ffccd1;height: 6700px;border-top:2.5px solid #FF4466;margin-top: 15px;}
+
+/* 一元快抢*/
+.nav-img{width:100%;height:420px;} 
+.nav-quickly{width:988px;min-height:800px;margin:0 auto;position: relative;}
+.nav-list{width:300px;height:430px;margin-bottom: 20px;background-color: #fff;border:1px solid #eee;margin-left: 27px;position:relative;float:left;}
+.seckill-item{width:300px;height:300px;overflow:hidden;}
+.seckill-item img{width:300px;height:300px;}
+.item-timer{width:270px;height:30px;background-color: #323232;margin:6px auto 14px;color:#fff;line-height: 28px;text-align: center;border-radius: 30px;font-size: 14px;}
+.item-timer .icon-timer{display: inline-block;vertical-align: middle;width:16px;height:16px;background:url(../images/QuicklyGrab/timer.lnk) center center no-repeat;background-size:contain;margin-right: 5px;}
+.item-timer span{font-size: 14px;}
+.title{width:264px;font-size: 16px;line-height: 16px;color:#333;margin:0 auto 15px;overflow:hidden;white-space: nowrap;text-overflow:ellipsis;}
+.detail{position:relative;line-height: 48px;max-height: 50px;overflow:hidden;font-size: 20px;}
+ .price img{float: left;margin:0 6px 0 18px;vertical-align: middle;}
+ .price1{font-size: 14px;color:#888;vertical-align: sub;position:relative;bottom:-20px;text-decoration: line-through;}
+ .btn-box{position:absolute;bottom:0;right:15px;}
+ .btn-box a{width:140px;height:40px;font-size: 18px;border-radius: 5px;text-align: center;line-height: 45px;color:#fff;background-color: #ff7e00;border: 1px solid #ff7e00;display: inline-block;}
+  .btn-box .js{background-color: #b6b6b6;border: 1px solid #b6b6b6;}
+ .stock-tag{background:#fff url(../images/QuicklyGrab/xl.png) no-repeat;z-index: 15;border-radius: 3px 3px 0 0;width:44px;height:42px;font-size: 14px;text-align: center;position:absolute;top:10px;left:10px;}
+.stock-tag .number{color:#f1a622;margin-top: 22px;display:block;font-size: 14px;}
+.layout{width:300px;height:300px;background-color: rgba(0,0,0,0.3);position:absolute;top:0;left:0;z-index: 20;text-align: center;}
+.layout img{margin-top:60px;}
+
+/* 快抢热卖商品 */
+.banner-img{width:960px;margin:0 auto;text-align: center;}
+.banner-img img{margin-top:100px;margin-bottom: 60px;}
+.banner-wall{width:970px;margin:0 auto;min-height: 1000px;}
+.banner-list{width:232px;margin-left: 10px;background-color: #fff;float:left;overflow:hidden;position:relative;margin-bottom: 30px;}
+.list-item img{width:232px;height:310px;overflow:hidden;}
+.wall-title{width:200px;overflow:hidden;white-space: nowrap;text-overflow: ellipsis;margin:12px auto 0px;font-size: 16px;line-height: 16px;color:#333;}
+.goods-info{margin-bottom: 10px;line-height: 1;padding-left: 16px;}
+.goods-info strong{font-size: 22px;color:#333;font-weight: bold;float:left;}
+.goods-info del{font-size: 14px;color:#888;vertical-align: 3px;margin-left: 20px;text-decoration: line-through;padding-top:7px;display:inline-block;}
+.banner-list>a{display:block;width:200px;height:38px;background-color: #e82e29;margin:0 auto 10px;color:#fff;text-align: center;line-height: 38px;font-size: 18px;border-radius: 3px;}
+
+.bottom-btn{width:100%;margin:0 auto;text-align: center;}

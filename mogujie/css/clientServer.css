@@ -1,0 +1,194 @@
+*{margin: 0;padding: 0;}
+#box{width: auto;background-color: #F5F5F5;}
+/*子类标题样式*/
+.server-title{width: 120px;height:17px;border-left:2px solid #FF5097;color: #333;padding-left: 10px;font: 17px/17px "微软雅黑";position: absolute;top: 23px;left: 25px;}
+/*顶部导航*/
+#header{width: auto;background-color: white;}
+#header-container{width:1200px;height: 82px;margin: 0 auto;position: relative;}
+#header-container>a{display: inline-block;position: absolute;top: 14px;left: 0;}
+#header-container ul{list-style: none;position: absolute;top: 24px;left: 380px;}
+#header-container ul li{margin-right: 20px;float: left;cursor: pointer;}
+#header-container ul li a{text-decoration: none;color: #333;font: 12px/12px "微软雅黑";padding: 7px;}
+#header-container ul li a:hover{color: #ff5097;}
+#header-container .header-current{background-color: #ff5097;color: white;border-radius: 3px;}
+#header-container .header-current:hover{color: white;}
+#header-container input{width: 250px;height: 28px;border: 1px solid #FF5097;border-radius: 4px 0 0 4px;padding-left: 10px;font: 12px/28px "微软雅黑";color: #333;position: absolute;top: 22px;right: 90px;outline: none;}
+/*修改pleaceholder样式及兼容*/
+#header-container input::-webkit-input-placeholder { /* WebKit browsers */ color: #A9A9A9;font: 13px/20px "微软雅黑";} 
+#header-container input:-moz-placeholder { /* Mozilla Firefox 4 to 18 */ color: #A9A9A9;font: 13px/20px "微软雅黑";} 
+#header-container input::-moz-placeholder { /* Mozilla Firefox 19+ */ color: #A9A9A9;font: 13px/20px "微软雅黑";} 
+#header-container input:-ms-input-placeholder { /* Internet Explorer 10+ */ color: #A9A9A9;font: 13px/20px "微软雅黑";} 
+#header-container p{width: 90px;height: 30px;background-color: #FF5097;border-radius: 0 4px 4px 0;text-align: center;position: absolute;top: 22px;right: 0px;overflow: hidden;}
+#header-container p a{display: block;text-decoration: none;width: 90px;height: 30px;}
+#header-container p a span{font-size: 15px;color: white;position: absolute;top: 5px;right: 22px;}
+#header-container p a img{position: absolute;top: 9px;left: 21px;}
+/*主体*/
+#main{width: 1200px;padding: 20px 0;margin: 0 auto;}
+/*首页*/
+/*快捷搜索*/
+#search{width: 1200px;background-color: white;height: 100px;position: relative;margin-bottom: 20px;}
+#search input{width: 940px;height: 28px;border: 1px solid #FF5097;border-radius: 4px 0 0 4px;padding-left: 10px;font: 12px/28px "微软雅黑";color: #333;position: absolute;top: 17px;right: 120px;outline: none;}
+#search input::-webkit-input-placeholder { /* WebKit browsers */ color: #A9A9A9;font: 13px/20px "微软雅黑";} 
+#search input:-moz-placeholder { /* Mozilla Firefox 4 to 18 */ color: #A9A9A9;font: 13px/20px "微软雅黑";} 
+#search input:-moz-placeholder { /* Mozilla Firefox 4 to 18 */ color: #A9A9A9;font: 13px/20px "微软雅黑";} 
+#searchr input::-moz-placeholder { /* Mozilla Firefox 19+ */ color: #A9A9A9;font: 13px/20px "微软雅黑";} 
+#search input:-ms-input-placeholder { /* Internet Explorer 10+ */ color: #A9A9A9;font: 13px/20px "微软雅黑";} 
+#search p{width: 90px;height: 30px;background-color: #FF5097;border-radius: 0 4px 4px 0;text-align: center;position: absolute;top: 17px;right: 30px;}
+#search p a{display: block;text-decoration: none;width: 90px;height: 30px;}
+#search p a span{font-size: 15px;color: white;position: absolute;top: 5px;right: 22px;}
+#search p a img{position: absolute;top: 9px;left: 21px;}
+#search ul{list-style: none;position: absolute;bottom: 25px;left: 130px;}
+#search ul li{float: left;color: #A9A9A9;margin-right: 20px;font: 12px/12px "微软雅黑";}
+#search ul li a{text-decoration: none;color: #A9A9A9;}
+/*首页主体第二部分边框，包含热门问题和最新公告*/
+#info-container{width: 1200px;height: 280px;margin-bottom: 20px;}
+/*热门问题*/
+#question{width: 880px;height: 280px;background-color: white;float: left;position: relative;}
+.question-sel{width: 826px;height: 200px;position: absolute;top: 60px;left: 23px;}
+.question-sel ul{width: 824px;height: 40px;border: 1px solid #eee;list-style: none;position: relative;}
+.question-sel ul li{width: 90px;height: 40px;float: left;cursor: pointer;font: 12px/40px "微软雅黑";text-align: center;margin-left: 10px;}
+.question-sel ul span{display:inline-block;width:90px;height:2px;border-bottom: 2px solid #FF5097;position: absolute;left: 10px;bottom: 0;}
+.question-sel div{width:824px;height: 150px;border: 1px solid #eee;margin-top: -1px;overflow: hidden;position: relative;}
+.question-sel div ol{width:824px;height: 150px;overflow: hidden;float: left;list-style: circle;display: none;}
+.question-sel div ol:first-child{display: block;}
+.question-sel div ol li{width: 360px;height: 37px;margin-left:40px;font: 12px/37px "微软雅黑";float: left;color: #505050;}
+.question-sel div ol li:hover{color: #FF5097;cursor:pointer;}
+/*最新公告*/
+#information{width: 300px;height:280px;background-color: white;float: right;position: relative;}
+#information ul{list-style: none;position: absolute;top: 50px;left: 25px;}
+#information ul li{width: 250px;height: 30px;font: 12px/30px "微软雅黑";}
+#information ul li a{display: block;text-decoration: none;color: #333;}
+#information ul li:hover a{color: #FF5097;cursor: pointer;}
+/*自助服务*/
+#selfserve{width: 1200px;background-color: white;height: 170px;position: relative;}
+#selfserve ul{list-style:none;position: absolute;top: 60px;left: 25px;}
+#selfserve ul li{float: left;margin-right: 10px;padding-left: 10px;}
+#selfserve ul li~li{border-left: 1px solid #eee;}
+#selfserve ul a{display:inline-block;width: 107px;height: 80px;text-align: center;text-decoration: none;}
+#selfserve ul a:hover{background-color: rgba(255,108,167,.2);border-radius: 5px;}
+#selfserve ul a:hover span{color: white;}
+#selfserve ul a div{width:107px;height: 40px;background: url(../img/141004231_76b5ej6d0a72f88dacilieh0lfg41_561x280.png) no-repeat;margin-top: 10px;}
+#selfserve .selfserve-one{background-position: 25px 0;}
+#selfserve .selfserve-two{background-position: -76px 0;}
+#selfserve .selfserve-thr{background-position: -177px 0;}
+#selfserve .selfserve-fou{background-position: -278px 0;}
+#selfserve .selfserve-fiv{background-position: -379px 0;}
+#selfserve .selfserve-six{background-position: -480px 0;}
+#selfserve .selfserve-sev{background-position: 25px -111px;}
+#selfserve .selfserve-eig{background-position: -79px -111px;}
+#selfserve .selfserve-nin{background-position: -177px -111px;}
+#selfserve ul a span{font-size: 12px;color: #A9A9A9;}
+/*自助服务*/
+/*购物流程*/
+#purchasing-process{width: 1200px;background-color: white;height: 220px;position: relative;margin: 20px 0;}
+#purchasing-process>ul{width: 940px;height: 25px;position: absolute;top: 60px;left: 45px;list-style: none;background-color: #EEEEEE;border-radius: 15px;overflow: hidden;}
+#purchasing-process>ul li{float: left;width: 180px;height:25px;font: 12px/25px "微软雅黑";text-align: center;}
+#purchasing-process>ul div{width: 20px;height:25px;float: left;}
+#purchasing-process>ul p{width:20px;height:25px;display: inline-block;font-family: "宋体";color: #A9A9A9;background-color: rgba(237,237,237,.3);float: right;}
+#purchasing-process>ul .purchase-current{background-color: #FF5097;color:white;cursor: pointer;}
+#purchasing-process>ul .purchase-current p{color:white}
+#purchasing-process .show{width: 1100px;height: 90px;background-color: #F5F5F5;border: 1px solid #eee;position: absolute;top: 105px;left: 45px;}
+#purchasing-process .show div{width: 50px;height: 50px;position: absolute;top: 20px;left: 20px;background-image: url(../img/141004231_76b5ej6d0a72f88dacilieh0lfg41_561x280.png);background-position: 0 -200px;}
+#purchasing-process .show ul li{width: 1000px;height: 50px;position: absolute;top: 20px;left: 90px;font: 15px/25px "微软雅黑";color: #A9A9A9;list-style: none;display: none;}
+#purchasing-process .show ul li:first-child{display: block;}
+#purchasing-process .show ul li a{text-decoration: none;color: #FF5097;}
+/*全部自助服务*/
+#allserver{width: 1200px;height:320px;background-color: white;position: relative;padding-top: 70px;}
+#allserver ol{width: 195px;height: 320px;list-style: none;color:#FF5097;float: left;padding-left: 45px;}
+#allserver ol .allser-second{margin: 92px 0 120px;}
+#allserver ul{width: 959px;list-style: none;margin-bottom: 20px;float: left;}
+#allserver ul li{width: 200px;height: 30px;float: left;padding-left: 30px;}
+#allserver ul li a{font: 12px/30px "微软雅黑";text-decoration: none;color: #333;}
+#allserver ul li a:hover{color: #FF5097;}
+/*联系客服*/
+/*在线客服&热线客服*/
+.lineserver{width: 1200px;height: 120px;background-color: white;position: relative;margin-bottom: 20px;}
+.lineserver span{display:block;font: 12px/17px "微软雅黑";color: #A9A9A9;position: absolute;top: 26px;left: 130px;}
+.lineserver a{text-decoration:none;position: absolute;top: 60px;left: 25px;width: 160px;height: 40px;background-color: #FF5097;color: white;font: 15px/40px "微软雅黑";border-radius: 3px;text-align: center;}
+.lineserver p{width: 400px;height: 40px;position: absolute;top: 60px;left: 300px;font: 14px/23px "微软雅黑";}
+.lineserver p span{position: absolute;top: 0;left: 0;}
+.lineserver .server-tel{left: 40px;font: 19px/22px "微软雅黑";color: #FF5097;}
+/*客服邮箱*/
+#servicemail{width: 1200px;height: 200px;background-color: white;position: relative;}
+#servicemail span{display:block;font: 12px/17px "微软雅黑";color: #A9A9A9;position: absolute;top: 26px;left: 130px;}
+#servicemail h4{width: 400px;height: 30px;position: absolute;top: 55px;left: 40px;font: 21px/30px "微软雅黑";color: #FF5097;}
+#servicemail p{width:1000px;height:90px;position: absolute;top: 95px;left:40px;font: 14px/30px "微软雅黑";}
+/*意见反馈*/
+/*意见反馈*/
+#feedback{width: 1200px;background-color: white;position: relative;}
+.choose-sug{width: 1000px;height: 110px;padding-top: 60px;padding-left: 25px;}
+.choose-sug label{display:block;width: 1000px;height: 30px;font: 14px/30px "微软雅黑";}
+.choose-sug label input{margin: 8px;position: relative;top: 1px;}
+.choose-sug label span{color: #A9A9A9;margin-left: 10px;}
+.input-sug{width: 1000px;height: 250px;padding-left: 35px;}
+.input-sug>p{margin-bottom: 10px;height:35px;font: 14px/30px "微软雅黑";position: relative;}
+.input-sug>p input{width: 200px;height:20px;outline: none;border: 1px solid #ddd;padding: 5px;position: absolute;left: 80px;}
+/*修改placeholder样式及兼容写法*/
+.input-sug>p input::-webkit-input-placeholder { /* WebKit browsers */ color: #ddd;font: 13px/20px "微软雅黑";} 
+.input-sug>p input:-moz-placeholder { /* Mozilla Firefox 4 to 18 */ color: #ddd;font: 13px/20px "微软雅黑";} 
+.input-sug>p input::-moz-placeholder { /* Mozilla Firefox 19+ */ color: #ddd;font: 13px/20px "微软雅黑";} 
+.input-sug>p input:-ms-input-placeholder { /* Internet Explorer 10+ */ color: #ddd;font: 13px/20px "微软雅黑";} 
+.input-sug>div{height:165px;position: relative;font: 14px/30px "微软雅黑";}
+.input-sug>div span{position: absolute;top: 0px;}
+/*修改placeholder样式及兼容写法*/
+.input-sug>div textarea{width: 350px;height:150px;outline: none;border: 1px solid #ddd;padding: 5px;position: absolute;left: 80px;}
+.input-sug>div textarea::-webkit-input-placeholder { /* WebKit browsers */ color: #ddd;font: 13px/20px "微软雅黑";} 
+.input-sug>div textarea:-moz-placeholder { /* Mozilla Firefox 4 to 18 */ color: #ddd;font: 13px/20px "微软雅黑";} 
+.input-sug>div textarea::-moz-placeholder { /* Mozilla Firefox 19+ */ color: #ddd;font: 13px/20px "微软雅黑";} 
+.input-sug>div textarea:-ms-input-placeholder { /* Internet Explorer 10+ */ color: #ddd;font: 13px/20px "微软雅黑";} 
+.input-sug .pic-selection{margin-top: 10px;height:30px;font: 14px/25px "微软雅黑";position: relative;}
+.input-sug .pic-selection input{position: absolute;left: 80px;width: 70px;height: 25px;background-image: none;opacity: 0;z-index: 10;}
+.input-sug .pic-selection p{position: absolute;left: 80px;width: 70px;height: 25px;border: 1px solid #A9A9A9;border-radius: 3px;text-align: center;}
+.input-sug .pic-selection div{position: absolute;left: 160px;font-size:12px;color: #A9A9A9;}
+#feedback .pic-container{width: 1000px;padding-left: 35px;}
+#feedback .pic-container div{/*width: 80px;height: 80px;*/margin: 10px 10px 0 0;border:1px solid #A9A9A9;display: inline-block;padding: 5px;}
+/*#feedback .pic-container div {width: 80px;height: 80px;}*/
+#feedback button{width: 73px;height: 30px;border-radius: 3px;background-color: #FF5097;border: none;outline: none;color: white;margin: 10px 115px 15px;cursor: pointer;}
+/*警告框*/
+.alertbox{width: 100%;height: 100%;background-color: rgba(0,0,0,.5);position: fixed;top: 0;left: 0;display: none;}
+.alertbox p{width: 200px;height: 50px;background-color: #FF5097;border-radius: 3px;margin: 400px auto;text-align: center;font: 15px/50px "微软雅黑";color: white;cursor: pointer;}
+/*常见问题*/
+/*首页主体第二部分边框，包含热门问题和最新公告*/
+#rule-container{width: 1200px;height: 800px;}
+/*常见问题分类*/
+#classification{width: 260px;height: 800px;background-color:white;position: relative;float: left;}
+#classification ul{list-style: none;width: 190px;position: absolute;top: 50px;left: 56px;}
+#classification ul li{transition: all .3s;}
+#classification ul li span{display: inline-block;height: 40px;font: 16px/40px "微软雅黑";cursor:pointer;}
+#classification ul li p{display: inline-block;font: 10px/40px "宋体";margin-left: 5px;}
+#classification ul li ol{list-style: none;margin-left: 20px;overflow: hidden;}
+#classification ul li ol li{height: 0px;}
+#classification ul li ol li a{height: 30px;font: 14px/30px "微软雅黑";text-decoration: none;color: #A9A9A9;} 
+#classification ul li ol li:hover a{color: #FF5097;}
+#classification ul .classfic-current{transition: all .3s;}
+#classification ul .classfic-current span{color: #FF5097;}
+#classification ul .classfic-current p{transform: rotate(90deg);}
+#classification ul .classfic-current ol li{height: 30px;}
+/*规则中心*/
+#rulecenter{width: 920px;height: 800px;background-color:white;position: relative;float: right;}
+#rulecenter ul{list-style: none;position:absolute;top: 65px;}
+#rulecenter ul li{width: 280px;height:220px;float: left;margin-left: 18px;margin-bottom: 20px;border: 1px solid #DDD;}
+#rulecenter ul li:hover{box-shadow: 0 0 20px #bbb;}
+#rulecenter ul li a{display: block;text-decoration: none;color: #333;}
+#rulecenter ul li a img{width: 280px;height:172px;vertical-align: top;}
+#rulecenter ul li a hr{height: 1px;border: none;border-top:1px solid #DDD ;}
+#rulecenter ul li a div{width:250px;height: 40px;font: 12px/20px "微软雅黑";margin-left: 18px;margin-top: 4px;}
+/*问题公告展示页*/
+#specific-question{width: 840px;height: 720px;background-color:white;position: relative;float: right;padding: 40px;}
+#specific-question h3{margin: 0 auto;width: 500px;text-align: center;margin-bottom: 30px}
+#specific-question p{font: 17px/27px "微软雅黑";color: #333;text-indent:2em;}
+#specific-question p>span{color: #FF5097;font-weight: bold;}
+#specific-question>div{margin: 15px auto;width: 500px;text-align: center;font-size: 12px;color: #BBBBBB;margin-top: 50px;}
+#specific-question ul{margin:0 auto;width: 240px;height: 40px;list-style: none;}
+#specific-question ul li{width: 108px;height: 34px;border-radius: 18px;border: 1px solid #DDDDDD;position: relative;}
+#specific-question ul li:hover{border-color: #FF5097;cursor: pointer;}
+#specific-question ul .sub-btn-left{float: left;}
+#specific-question ul .sub-btn-right{float: right;}
+#specific-question ul li>div{width: 20px;height: 20px;position: absolute;top: 7px;left: 20px;/*overflow: hidden;*/background-image: url(../img/141004231_76b5ej6d0a72f88dacilieh0lfg41_561x280.png);}
+#specific-question ul li>span{height: 20px;position: absolute;top: 7px;left: 45px;font: 12px/20px "微软雅黑";}
+#specific-question ul .sub-btn-left div{background-position: -525px -254px;}
+#specific-question ul .sub-btn-right div{background-position: -503px -254px;}
+/*搜索反馈*/
+#search-resul{width: 920px;height: 800px;background-color:white;float: right;}
+#search-resul h6{width: 860px;height:60px;margin: 0 auto;font: 15px/60px "微软雅黑";border-bottom: 1px solid #DDDDDD;}
+#search-resul h6 span{color: #FF5097;}

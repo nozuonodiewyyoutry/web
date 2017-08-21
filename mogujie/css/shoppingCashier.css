@@ -1,0 +1,92 @@
+/*购物车*/
+body{font: 12px/1.6 tahoma,arial,sans-serif;}
+#body_wrap{min-height:350px;}
+.g_header{width:100%;height:73px;border-bottom: 1px solid #ddd;background: #f2f2f2;}
+.g_header_in{width:1200px;height:70px;margin:0 auto;}
+/*进度条*/
+.process_bar{width:494px;height:65px;float:right;background: url(../images/shoppingCartImg/jdt1.png) 0 18px repeat-x;z-index: 1;position:relative;}
+.md_process_sd{background: url(../images/shoppingCartImg/jdt.png) 23px 0 repeat-x;z-index: 2;height:23px;width:405px;top: 18px;position:absolute;}
+.md_process_box{position:absolute;top:19px;width:100px;height:20px;left:50%;font:normal 12px/20px helvetica,tahoma,arial,sans-serif; color:#999;z-index: 5;margin-left: 8px;}
+.md_process_box1{left:-2px;font: normal 14px/23px helvetica,tahoma,arial,sans-serif;
+color: #fff;}
+.md_process_box2{left:157px;color: #fff;}
+.md_process_box3{left:314px;color: #fff;}
+.md_process_box4{left:463px;}
+.md_process_tip{position: absolute;top: 24px;width: 100px;height: 20px;left: 50%;margin-left: -55%;font: normal 12px/20px helvetica,tahoma,arial,sans-serif;color: #999;}
+.md_process_box1 .md_process_tip{color:#f46;position:absolute;left:0;left:45px;}
+.md_process_box2 .md_process_tip{position:absolute;left:36px;color:#f46;}
+.md_process_box3 .md_process_tip{position:absolute;left:46px;color:#f46;}
+.md_process_box4 .md_process_tip{position:absolute;left:56px;}
+/*logo*/
+.logo_cart{float: left;width: 225px;height: 48px;margin-top: 14px;background:url(../images/shoppingCartImg/split.png)0 0 no-repeat;}
+
+/*标题部分*/
+.md_order_head{padding: 10px 0 18px;border-bottom: 2px solid #ddd;width: 1200px;margin-left: auto;margin-right: auto;background:#fff;color: #333;}
+.tit_product{font-size: 18px;height: 42px;line-height: 42px;font-weight: 400;padding-left: 32px;}
+.md_order_head span{display: inline-block;vertical-align: middle;font: normal 14px/20px Microsoft YaHei;color: #333;}
+.J_cashierTimer{padding-left: 32px;}
+.md_order_head .color_red{color: #f5456e !important;}
+.md_order_head .tit_fw{color: #666;font: normal 12px/24px helvetica;}
+
+/*微信支付*/
+.md_discount{min-height: 336px;background:#fff;margin-left: auto;margin-right: auto;padding:16px 32px 0;width:1135px;}
+.md_discount ul .li1:hover{border: 2px solid #ababab !important;}
+.md_discount ul .li1{position:relative;display: block;position: relative;margin-bottom: 28px;background: #fff;cursor: pointer;}
+.md_discount ul .li1 span.icon_wechatPay{margin-left: 32px;display: inline-block;width: 28px;vertical-align: middle;background:url(../images/shoppingCartImg/icon.png)0 -167px no-repeat;height: 28px;}
+.md_discount ul .li1 .earnname{display: inline-block;height: 56px;line-height: 56px;width: 94px;font-size: 18px;vertical-align: middle;}
+.md_discount ul .li1:hover .paynum{display:block;}
+.md_discount ul .li1 .paynum{position: absolute;right: 0;top: 0;font-size: 14px;padding-right: 18px;display: inline-block;height: 56px;line-height: 56px;vertical-align: middle;}
+.md_discount ul .li1 .paynum .num{padding: 0 2px;color: #f5456e;vertical-align: baseline;font-size: 18px;}
+.md_paytab{border-bottom: 1px solid #f6f6f6;background: #f9f9f9;padding: 20px 32px 48px;overflow: hidden;}
+.md_paytab .code_wrap{float: left;width: 45%;height: 230px;padding: 32px 0;text-align: center;background: #fff;}
+.md_paytab .code2_wechat .code_wrap img{border: 1px solid #f6f6f6;text-align: center;display: inline-block;}
+.md_paytab .tip{float: left;position: relative;padding: 61px 0;width: 55%;height: 172px;background: #f4f4f4;}
+.md_paytab .tip h5{padding: 30px 0;font: 700 20px/1.4 Microsoft YaHei;text-align: center;color: #999;}
+.md_paytab .tip p{text-align: center;color: #999;cursor: pointer;font: 12px/1.6 tahoma,arial,sans-serif;}
+.md_paytab .tip p a{padding: 0 2px;color: #277ecd;}
+.md_paytab .tip p a:hover{text-decoration: underline;}
+
+/*支付宝支付*/
+/*头*/
+.md_discount ul .li2{position:relative;display: block;position: relative;margin-bottom: 28px;background: #fff;cursor: pointer;}
+.md_discount ul .li2:hover{border: 2px solid #ababab !important;}
+.md_discount ul .li2:hover .zfb_paynum{display:block;}
+.md_discount ul .li2 span.zfb_icon_wechatPay{margin-left: 32px;display: inline-block;width: 28px;vertical-align: middle;background:url(../images/shoppingCartImg/icon.png)0 -112px no-repeat;height: 28px;}
+.md_discount ul .li2 .zfb_earnname{display: inline-block;height: 56px;line-height: 56px;width: 94px;font-size: 18px;vertical-align: middle;}
+.md_discount ul .li2 .zfb_paynum{position: absolute;right: 0;top: 0;font-size: 14px;padding-right: 18px;height: 56px;line-height: 56px;vertical-align: middle;display: none;}
+.md_discount ul li.li2 .zfb_paynum .zfb_num{padding: 0 2px;color: #f5456e;vertical-align: baseline;font-size: 18px;}
+.md_discount ul li.li2 .zfb_md_paytab{border-bottom: 1px solid #f6f6f6;background: #f9f9f9;padding: 20px 32px 48px;overflow: hidden;display: none;}
+/*左边*/
+.md_discount ul li.li2 .zfb_md_paytab .zfb_title{width:49.3%;height: 356px;float: left;text-align: center;background: #fff;}
+.md_discount ul li.li2 .zfb_md_paytab .zfb_title .title{text-align: center;color: #999;background: #f4f4f4;font: normal 20px/64px Microsoft YaHei;}
+.md_discount ul li.li2 .zfb_md_paytab .zfb_title .zfb_ewm{background:url(../images/shoppingCartImg/zfbewm.png);width: 230px;margin: 0 auto;position: relative;height: 234px;margin-top: 30px;}
+.md_discount ul li.li2 .zfb_md_paytab .zfb_title .zfb_ewm img{position: absolute;top: 50%;left: 50%;width: 57.5px;height: 57.5px;margin-left: -28.75px;margin-top: -28.75px;}
+
+/*右边*/
+.md_discount ul li.li2 .zfb_md_paytab .zfb_computer_title{width:49.3%;height: 356px;float: right;text-align: center;background: #fff;}
+.md_discount ul li.li2 .zfb_md_paytab .zfb_computer_title .title{text-align: center;color: #999;background: #f4f4f4;font: normal 20px/64px Microsoft YaHei;}
+.md_discount ul li.li2 .zfb_md_paytab .zfb_computer_title .computer_pic{margin: 0 auto 18px;width: 188px;height: 100px;background:url(../images/shoppingCartImg/computer.png)-132px -100px no-repeat;text-align: center;cursor: pointer;position: relative;margin-top: 50px;}
+.md_discount ul li.li2 .zfb_md_paytab .zfb_computer_title a{display: block;width: 188px;height: 54px;margin: 0 auto;vertical-align: middle;text-align: center;color: #fff;background: #f5456e;font: normal 20px/54px Microsoft YaHei;}
+
+/*银行*/
+.md_discount ul .li3{position:relative;border: 2px solid #f6f6f6 !important;display: block;position: relative;margin-bottom: 28px;background: #fff;cursor: pointer;}
+.md_discount ul li.li3:hover{border: 2px solid #ababab !important;}
+.md_discount ul li.li3 .zfb_paynum{position: absolute;right: 0;top: 0;font-size: 14px;padding-right: 18px;height: 56px;line-height: 56px;vertical-align: middle;display: none;}
+.md_discount ul li.li3 .zfb_paynum .zfb_num{padding: 0 2px;color: #f5456e;vertical-align: baseline;font-size: 18px;}
+.md_discount ul .li3:hover .zfb_paynum{display:block;}
+.md_discount ul .li3 .earnname{vertical-align: middle;display: inline-block;height: 56px;line-height: 56px;width: 94px;font-size: 18px;cursor: pointer;margin-left: 50px;}
+.md_discount ul .li3 ul{padding: 4px 30px;display: block;padding-bottom: 30px;height:150px;margin-bottom: 20px;}
+.md_discount ul .li3 ul li{float: left;margin: 0 10px 10px 0;background: #fff;border: 2px solid #f6f6f6;cursor: pointer;display: block;}
+.md_discount ul .li3 ul li:hover{border: 2px solid #ababab;}
+.md_discount ul .li3 ul li span{width: 164px;height: 44px;line-height: 44px;padding-left: 0;display: inline-block;}
+.md_discount ul .li3 ul li span img{width:130px;height:40px;margin-left: 20px;}
+
+/*支付提示*/
+.bottom_tip{text-align: center;color: #999;font-size: 14px;padding-bottom: 20px;margin-bottom: 50px;}
+
+.bkx{border: 2px solid #ababab !important;}
+.bkx1{border: 2px solid #f6f6f6 !important;}
+
+/*确认并付款*/
+.md_discount ul .li3 .qrfk{width:100%;height:100px;margin-top: 50px;background:#F9F9F9;line-height: 100px;}
+.md_discount ul .li3 .qrfk .J_payOrder{display: inline-block;padding: 0 24px;color: #fff;background: #f5456e;border-radius: 2px;font: normal 16px/46px Microsoft YaHei;float:right;margin-top: 25px;margin-right: 20px;}

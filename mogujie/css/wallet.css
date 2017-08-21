@@ -1,0 +1,74 @@
+/* 钱包header_top区 */
+.clear{clear:both;}
+.pur_h_login{height:30px;line-height: 30px; float:right;}
+.head_box{width:100%;height:76px;background:#fff;}
+.header_con{width:1200px;height:76px;margin:0 auto;}
+.pur_header_logo{float: left;width: 130px;height: 34px; margin: 20px 20px 0 0;overflow: hidden;text-indent: -999em; background:url(../images/personalImg/6.png) no-repeat;}
+.header_nav {float: right;}
+.header_nav ul li .header_active{color:#f55;}
+.header_nav ul li{display: inline;position: relative;line-height: 76px;z-index: 100;float: left; margin-left: 30px;}
+.header_nav ul li a{color:#333; display:block;}
+.header_nav>ul>li:first-child a{color:#f55; border-bottom: 2px solid #f55; margin-bottom: 15px;background:url(../images/personalImg/13.png) bottom no-repeat;}
+.header_nav ul li a:hover{color:#f55;}
+/* 问候·天气区style */
+.body_warp{background:#e7e8eb;margin-top: 30px;}
+.purse_header{height: 110px;margin-bottom: 20px;background: url(../images/personalImg/1.jpg) 50% repeat-x;}
+.wrap{width: 1200px;margin-left: auto;margin-right: auto;}
+.purse_header_img{width: 70px;height: 70px;border-radius: 50%; float: left;margin-top: 20px;}
+.pur_c{width:600px;padding: 27px 0 0 20px;}
+.wallet_wel{font-size: 20px;}
+.pur_r{line-height: 24px;white-space: nowrap;}
+.pur_header_icon{background: hsla(0,0%,100%,.5);width: 26px;height: 26px;border-radius: 50%;display: block;float: left;position: relative;margin-right: 10px;}
+.wallet_icon{text-indent: -9999px;line-height: 26px;height: 26px; margin: 0; display:inline-block;background-position: -2px -63px;padding-left: 26px;background:url(../images/personalImg/7.png) 0 -62px no-repeat;}
+.wallet_icon:hover .widget_mtip{display:block;}
+.widget_mtip{top: 36px; display: none; left: -18px;position: absolute;padding: 10px 18px;background: #fff;border: 1px solid #ddd;box-shadow: 0 1px 3px rgba(0,0,0,.1);}
+.widget_mtip_line{  color: #666;font: normal 12px/16px helvetica,tahoma,arial,sans-serif;}
+.wallet_link{color:#2ad;cursor:pointer;}
+.widget_mtip_ang{top:1px;left:20px;border-bottom-color:#fff ;margin-top: -15px;border: 7px solid pink;border-color: transparent;position: absolute;width: 0;height: 0;font-size: 0;letter-spacing: 0;}
+.login_time{padding:30px 20px 0 0;float:right;}
+.login_time p{font-size: 14px; width:136px;height:20px;float:right;}
+/* pur_main */
+.pur_main{width:1200px;margin-left:auto;margin-right: auto ;}
+.pur_main_top{margin-top: -20px;background:#f77376;color:#fff;font-size: 14px;padding:6px 12px;}
+.icon_vioce{margin-right: 12px;background: url(../images/personalImg/8.png) 50% no-repeat;background-size: 18px 18px;width:18px;height: 18px;display:inline-block;}
+.icon_close{float: right;cursor: pointer;background: url(../images/personalImg/9.png) 50% no-repeat;background-size: 18px 18px;display:inline-block;width:18px;height: 18px;}
+.pur_asset{border: 1px solid #ddd;background: #fff;margin: 0 auto 20px;float:left;width:1198px;}
+.pur_asset_l{width: 770px;padding: 0 30px;float:left;}
+.pur_asset_title{padding-top: 20px; font-size: 16px;font-weight: 400;}
+.pur_wellat{margin: 10px 0 20px;font-size: 14px;}
+.pur_fnlist{height: 32px; line-height: 32px;font-size: 12px;}
+.pur_yu{background:url(../images/personalImg/5.png) 0 no-repeat;background-size: 18px 18px;padding-left: 26px;font-size: 16px;float:left;color:#999;margin-right: 10px;}
+.pur_fnlist li .pur_ti{margin-left: 10px;padding:4px 6px;border:1px solid #f55;color:#f55;border-radius: 4px;}
+.pur_baifumei{position:relative;padding-bottom: 14px;border-top:1px solid #ccc;}
+.pur_help{background:url(../images/personalImg/1.gif)50% no-repeat;width:32px;height:32px;display:block;position:absolute;top:16px;left:60px;}
+.pur_baifumei h3{margin-bottom: 10px;padding-top: 20px;font-size: 16px;font-weight: 400;}
+.pur_baifumei p.pur_txt{color:#333;font-size: 16px;line-height: 28px;}
+.pur_baifumei a.pur_opener{margin: 10px 0;position: relative;min-width: 120px;height: 34px;font-size: 14px;line-height: 20px;padding: 6px 20px;  background-color: #f55;border-color: #f55;color: #fff;box-sizing: border-box;display: inline-block;vertical-align: middle;zoom: 1;    /*background: #fff;*/text-align: center;border: 1px solid #c4c4c4;border-radius: 2px;outline: none;}
+.pur_kai{display: none;position: absolute;width: 160px;padding: 10px;top: -132px;left: 130px;background-color: #fff;border: 1px solid #fc5759;}
+.pur_baifumei a:hover .pur_kai{display:block;}
+.pur_kai:before{border: 11px solid transparent;border-right-color: #fff;z-index: 20;left: -18px;content: "";position: absolute;top: 137px;left: -20px;width: 0;height: 0;border: 10px solid transparent;border-right-color: #fc5759;}
+.pur_kai:after{top: 137px;border: 11px solid transparent;border-right-color: #fff;z-index: 20;left: -18px;}
+.pur_agree{font-size: 12px;color: #888;line-height: 28px;font-style: italic;}
+.pur_agree i{display: inline-block;width: 14px; height: 14px;vertical-align: middle;background:url(../images/personalImg/2.gif);}
+.pur_agree a{color:#f95875;text-decoration: underline;white-space: nowrap;}
+.pur_buy{font-size: 12px;line-height: 20px;}
+.pur_asset_r{margin-top: 30px;padding: 0 0 0 30px;width: 310px;height: 212px;border-left: 1px solid #ccc;float:left;}
+.pur_asset_r h3{margin-left: 10px;padding: 0;font-size: 16px;font-weight: 400;float: left;width: 50px;line-height: 32px;}
+.pur_asset_ul{float:left;}
+.pur_asset_ul li{float: left;line-height: 32px;font-size: 12px;padding-left: 40px;line-height: 32px;width: 115px;color: #888;margin: 10px 0;}
+.pur_asset_li1{background: url(../images/personalImg/11.png) 0 0 no-repeat;background-position: 6px -100px;float: left;}
+.pur_asset_li2{float: left;background: url(../images/personalImg/11.png) 0 0 no-repeat;    background-position: 6px -148px;}
+.pur_asset_li3{float: left;background: url(../images/personalImg/11.png) 0 0 no-repeat;background-position: 6px -8px;}
+.pur_asset_li4{float: left;background: url(../images/personalImg/11.png) 0 0 no-repeat;background-position: 6px -53px;}
+.pur_asset_li5{float: left;background: url(../images/personalImg/11.png) 0 0 no-repeat;background-position: 6px -197px;}
+.pur_panel{    border: 1px solid #ddd;background: #fff;margin: 0 auto 20px;}
+.pur_panel_header{background: #fafafa;border-bottom: 1px solid #e7e7e7;font-size: 16px;color: #666;position: relative;line-height: 30px;padding: 10px 28px;}
+.pur_banklist_none{ position: relative;overflow: visible;text-align: center;border-bottom: 1px solid #f3f3f3;}
+.pur_banklist_none img{width: 352px;height: 110px;margin-top: 60px; display:inline;}
+.pur_banklist_more a{display: block;text-align: center;line-height: 40px;}
+.pur_bank_link{color: #2ad; cursor: pointer;}
+/* pur_banner */
+.pur_activity{width: 1200px;height: 100px;position: relative;overflow: hidden;}
+.pur_banner{position: relative;background: #fff;}
+.pur_ma_banner{display: block;z-index: 1;  width: 100%;position: absolute;top: 0;left: 0;}
+
